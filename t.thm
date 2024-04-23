@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view>
+
+<projection> <type name="book"/> </projection>
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="book"/>
+   <type name="Int"/>
+   <type name="page"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="seq/Int"/>
+   <set name="chapter" type="page"/>
+</node>
+
+</view>
+
+</alloy>

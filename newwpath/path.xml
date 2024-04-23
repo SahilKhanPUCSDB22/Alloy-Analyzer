@@ -1,0 +1,128 @@
+<alloy builddate="2023-06-22T06:38:33.475Z">
+
+<instance bitwidth="5" maxseq="4" mintrace="-1" maxtrace="-1" command="Run p for 5 int, exactly 8 people" filename="/home/sahil/alloy/newwpath/counter.als" tracelength="1" backloop="0">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/people" ID="4" parentID="2">
+   <atom label="people$0"/>
+   <atom label="people$1"/>
+   <atom label="people$2"/>
+   <atom label="people$3"/>
+   <atom label="people$4"/>
+   <atom label="people$5"/>
+   <atom label="people$6"/>
+   <atom label="people$7"/>
+</sig>
+
+<field label="l" ID="5" parentID="4">
+   <tuple> <atom label="people$0"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="people$1"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="people$2"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="people$3"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="people$4"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="people$5"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="people$6"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="people$7"/> <atom label="1"/> </tuple>
+   <types> <type ID="4"/> <type ID="1"/> </types>
+</field>
+
+<field label="seg" ID="6" parentID="4">
+   <tuple> <atom label="people$0"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="people$1"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="people$2"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="people$3"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="people$4"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="people$5"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="people$6"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="people$7"/> <atom label="4"/> </tuple>
+   <types> <type ID="4"/> <type ID="1"/> </types>
+</field>
+
+<field label="d" ID="7" parentID="4">
+   <tuple> <atom label="people$0"/> <atom label="dec$0"/> </tuple>
+   <tuple> <atom label="people$1"/> <atom label="dec$0"/> </tuple>
+   <tuple> <atom label="people$2"/> <atom label="inc$0"/> </tuple>
+   <tuple> <atom label="people$3"/> <atom label="inc$0"/> </tuple>
+   <tuple> <atom label="people$4"/> <atom label="dec$0"/> </tuple>
+   <tuple> <atom label="people$5"/> <atom label="dec$0"/> </tuple>
+   <tuple> <atom label="people$6"/> <atom label="inc$0"/> </tuple>
+   <tuple> <atom label="people$7"/> <atom label="inc$0"/> </tuple>
+   <types> <type ID="4"/> <type ID="8"/> </types>
+</field>
+
+<field label="st" ID="9" parentID="4">
+   <tuple> <atom label="people$0"/> <atom label="-15"/> </tuple>
+   <tuple> <atom label="people$1"/> <atom label="-15"/> </tuple>
+   <tuple> <atom label="people$2"/> <atom label="-15"/> </tuple>
+   <tuple> <atom label="people$3"/> <atom label="-15"/> </tuple>
+   <tuple> <atom label="people$4"/> <atom label="-16"/> </tuple>
+   <tuple> <atom label="people$5"/> <atom label="-16"/> </tuple>
+   <tuple> <atom label="people$6"/> <atom label="-16"/> </tuple>
+   <tuple> <atom label="people$7"/> <atom label="-16"/> </tuple>
+   <types> <type ID="4"/> <type ID="1"/> </types>
+</field>
+
+<field label="n" ID="10" parentID="4">
+   <tuple> <atom label="people$4"/> <atom label="people$0"/> </tuple>
+   <tuple> <atom label="people$5"/> <atom label="people$1"/> </tuple>
+   <tuple> <atom label="people$6"/> <atom label="people$2"/> </tuple>
+   <tuple> <atom label="people$7"/> <atom label="people$3"/> </tuple>
+   <types> <type ID="4"/> <type ID="4"/> </types>
+</field>
+
+<sig label="this/lanes" ID="11" parentID="2" one="yes">
+   <atom label="lanes$0"/>
+</sig>
+
+<field label="number" ID="12" parentID="11">
+   <tuple> <atom label="lanes$0"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="lanes$0"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="lanes$0"/> <atom label="3"/> </tuple>
+   <types> <type ID="11"/> <type ID="1"/> </types>
+</field>
+
+<sig label="this/inc" ID="13" parentID="8" one="yes">
+   <atom label="inc$0"/>
+</sig>
+
+<sig label="this/dec" ID="14" parentID="8" one="yes">
+   <atom label="dec$0"/>
+</sig>
+
+<sig label="this/direction" ID="8" parentID="2" abstract="yes">
+</sig>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+<sig label="this/first" ID="15">
+   <atom label="people$4"/>
+   <atom label="people$5"/>
+   <atom label="people$6"/>
+   <atom label="people$7"/>
+   <type ID="4"/>
+</sig>
+
+<sig label="this/last" ID="16">
+   <atom label="people$0"/>
+   <atom label="people$1"/>
+   <atom label="people$2"/>
+   <atom label="people$3"/>
+   <type ID="4"/>
+</sig>
+
+</instance>
+
+<source filename="/home/sahil/alloy/newwpath/counter.als" content="sig people&#x000a;{&#x000a;l:one Int,&#x000a;seg:one Int,&#x000a;d:one direction,&#x000a;st:one Int,&#x000a;n:disj lone people&#x000a;}&#x000a;{&#x000a;l&gt;0 and l&lt;4&#x000a;}&#x000a;&#x000a;one sig lanes&#x000a;{&#x000a;number:set Int&#x000a;}&#x000a;{&#x000a;number=1+2+3&#x000a;}&#x000a;&#x000a;abstract sig direction{}&#x000a;one sig inc,dec extends direction{}&#x000a;&#x000a;sig first in people{}&#x000a;{}&#x000a;&#x000a;sig last in people{}&#x000a;{&#x000a;no n&#x000a;}&#x000a;&#x000a;let rest = people - last &#x000a;&#x000a;fact&#x000a;{&#x000a;#first=4&#x000a;#last=4&#x000a;all f:first|&#x000a;f.st=-16 and no f.~n and f not in (first-f).^n&#x000a;all p:people|p not in p.^n &#x000a;all p:rest|p.n.d=p.d and p.n.st=p.st.add[1]&#x000a;//all f:first|lone l:last|l in f.^n&#x000a;//some f:first | f.d!=(first-f).d&#x000a;//no f:first|f.l=3&#x000a;}&#x000a;&#x000a;check&#x000a;{&#x000a;no disj p1,p2:people|&#x000a;p1.st=p2.st and p1.l=p2.l and p1.seg=p2.seg&#x000a;} for 20 people , 5 int&#x000a;&#x000a;check&#x000a;{&#x000a;no p:rest|move[p,p.seg.add[1],p.l] =&gt; p.l!=p.n.l and p.n.seg &lt;= p.seg&#x000a;}for 10 people , 5 int&#x000a;/*****************precondition***********************/&#x000a;&#x000a;fact pre&#x000a;{&#x000a;//no rule violation at the start&#x000a;no disj f1,f2:first|f1.seg=f2.seg and f1.l=f2.l&#x000a;&#x000a;//all elements at start are between 1-10&#x000a;all f:first | f.d=inc =&gt; f.seg &gt;-1 and f.seg&lt;5&#x000a;all f:first | f.d=dec =&gt; f.seg &gt;0 and f.seg&lt;6&#x000a;&#x000a;//all elements will have fixed direction&#x000a;all f:first|f.d=dec or f.d=inc&#x000a;}&#x000a;&#x000a;/******************invariant************************/&#x000a;&#x000a;/*******************inc***************************/&#x000a;&#x000a;fact&#x000a;{&#x000a;all p:rest|p.d=inc and &#x000a;laneempty[p,p.seg.add[1],p.seg.add[2],p.l] =&gt; move[p,p.seg.add[1],p.l]&#x000a;&#x000a;all p:rest|p.d=inc and&#x000a;lanefull[p,p.seg.add[1],p.seg.add[2],p.l] =&gt; some lx:(lanes.number-p.l)|&#x000a;laneempty[p,p.seg.add[1],p.seg.add[2],lx] =&gt; move[p,p.seg.add[1],lx] &#x000a;&#x000a;all p:rest|p.d=inc and&#x000a;lanefull[p,p.seg.add[1],p.seg.add[2],p.l] =&gt; all lx:(lanes.number-p.l)|&#x000a;lanefull[p,p.seg.add[1],p.seg.add[2],lx] =&gt; nomove[p,p.seg]   &#x000a;/********************dec***************************/&#x000a;all p:rest|p.d=dec and&#x000a;laneempty[p,p.seg.sub[1],p.seg.sub[2],p.l] =&gt; move[p,p.seg.sub[1],p.l] &#x000a;&#x000a;all p:rest|p.d=dec and&#x000a;lanefull[p,p.seg.sub[1],p.seg.sub[2],p.l] =&gt; some lx:(lanes.number-p.l)|&#x000a;laneempty[p,p.seg.sub[1],p.seg.sub[2],lx] =&gt; move[p,p.seg.sub[1],lx]&#x000a;&#x000a;all p:rest|p.d=dec and&#x000a;lanefull[p,p.seg.sub[1],p.seg.sub[2],p.l] =&gt; all lx:(lanes.number-p.l)|&#x000a;lanefull[p,p.seg.sub[1],p.seg.sub[2],lx] =&gt; nomove[p,p.seg]&#x000a;}&#x000a;&#x000a;/*********************predicates*********************/&#x000a;&#x000a;//checks segment&#x000a;pred segcheck[p:people,i,j:Int]&#x000a;{&#x000a;p.seg=i or p.seg=j&#x000a;}&#x000a;&#x000a;//makes move&#x000a;pred move[p:people,i,lx:Int]&#x000a;{&#x000a;p.n.seg=i and p.n.l=lx&#x000a;}&#x000a;&#x000a;//makes no move&#x000a;pred nomove[p:people,i:Int]&#x000a;{&#x000a;p.n.seg=i and p.n.l=p.l&#x000a;}&#x000a;&#x000a;//checks lane&#x000a;pred laneempty[p:people,i,j,lx:Int]&#x000a;{&#x000a;no px1:people|p!=px1 and&#x000a;px1.st=p.st and px1.seg=i and px1.l=lx or&#x000a;px1.st=p.st and px1.seg=j and px1.l=lx&#x000a;}&#x000a;&#x000a;//checks lane empty&#x000a;pred lanefull[p:people,i,j,lx:Int]&#x000a;{&#x000a;some px1:people|p!=px1 and&#x000a;px1.st=p.st and px1.seg=i and px1.l=lx or&#x000a;px1.st=p.st and px1.seg=j and px1.l=lx&#x000a;}&#x000a;&#x000a;/*******************running*************************/&#x000a;&#x000a;pred p&#x000a;{&#x000a;//#people&gt;7&#x000a;}&#x000a;run p for exactly 8 people,5 int&#x000a;&#x000a;/********************postcondition*******************/&#x000a;fact post&#x000a;{&#x000a;//all l:people|l.d=inc and l.seg=6 &lt;=&gt; l in last &#x000a;all l:people|l.d=dec and l.seg=0 or l.d=inc and l.seg=5 &lt;=&gt; l in last&#x000a;//all l:last|l.d=dec =&gt; l.seg=5&#x000a;}&#x000a;"/>
+
+<source filename="/$alloy4$/models/util/integer.als" content="module util/integer&#x000a;&#x000a;/*&#x000a; * A collection of utility functions for using Integers in Alloy.&#x000a; * Note that integer overflows are silently truncated to the current bitwidth&#x000a; * using the 2&apos;s complement arithmetic, unless the &quot;forbid overfows&quot; option is&#x000a; * turned on, in which case only models that don&apos;t have any overflows are &#x000a; * analyzed. &#x000a; */&#x000a;&#x000a;fun add  [n1, n2: Int] : Int { this/plus[n1, n2] }&#x000a;fun plus [n1, n2: Int] : Int { n1 fun/add n2 }&#x000a;&#x000a;fun sub   [n1, n2: Int] : Int { this/minus[n1, n2] }&#x000a;fun minus [n1, n2: Int] : Int { n1 fun/sub n2 }&#x000a;&#x000a;fun mul [n1, n2: Int] : Int { n1 fun/mul n2 }&#x000a;&#x000a;/**&#x000a; * Performs the division with &quot;round to zero&quot; semantics, except the following 3 cases&#x000a; * 1) if a is 0, then it returns 0&#x000a; * 2) else if b is 0, then it returns 1 if a is negative and -1 if a is positive&#x000a; * 3) else if a is the smallest negative integer, and b is -1, then it returns a&#x000a; */&#x000a;fun div [n1, n2: Int] : Int { n1 fun/div n2 }&#x000a;&#x000a;/** answer is defined to be the unique integer that satisfies &quot;a = ((a/b)*b) + remainder&quot; */&#x000a;fun rem [n1, n2: Int] : Int { n1 fun/rem n2 }&#x000a;&#x000a;/** negate */&#x000a;fun negate [n: Int] : Int { 0 fun/sub n }&#x000a;&#x000a;/** equal to */&#x000a;pred eq [n1, n2: Int] { int[n1] = int[n2] }&#x000a;&#x000a;/** greater than */&#x000a;pred gt [n1, n2: Int] { n1 &gt; n2 }&#x000a;&#x000a;/** less then */&#x000a;pred lt [n1, n2: Int] { n1 &lt; n2 }&#x000a;&#x000a;/** greater than or equal */&#x000a;pred gte [n1, n2: Int] { n1 &gt;= n2 }&#x000a;&#x000a;/** less than or equal */&#x000a;pred lte [n1, n2: Int] { n1 &lt;= n2 }&#x000a;&#x000a;/** integer is zero */&#x000a;pred zero [n: Int] { n = 0 }&#x000a;&#x000a;/** positive */&#x000a;pred pos  [n: Int] { n &gt; 0 }&#x000a;&#x000a;/** negative */&#x000a;pred neg  [n: Int] { n &lt; 0 }&#x000a;&#x000a;/** non-positive */&#x000a;pred nonpos [n: Int] { n &lt;= 0 }&#x000a;&#x000a;/** non-negative */&#x000a;pred nonneg [n: Int] { n &gt;= 0 }&#x000a;&#x000a;/** signum (aka sign or sgn) */&#x000a;fun signum [n: Int] : Int { n&lt;0 =&gt; (0 fun/sub 1) else (n&gt;0 =&gt; 1 else 0) }&#x000a;&#x000a;/**&#x000a; * returns the ith element (zero-based) from the set s&#x000a; * in the ordering of &apos;next&apos;, which is a linear ordering&#x000a; * relation like that provided by util/ordering&#x000a; */&#x000a;fun int2elem[i: Int, next: univ-&gt;univ, s: set univ] : lone s {&#x000a;  {e: s | #^next.e = int i }&#x000a;}&#x000a;&#x000a;/**&#x000a; * returns the index of the element (zero-based) in the&#x000a; * ordering of next, which is a linear ordering relation&#x000a; * like that provided by util/ordering&#x000a; */&#x000a;fun elem2int[e: univ, next: univ-&gt;univ] : lone Int {&#x000a;  Int[#^next.e]&#x000a;}&#x000a;&#x000a;/** returns the largest integer in the current bitwidth */&#x000a;fun max:one Int { fun/max }&#x000a;&#x000a;/** returns the smallest integer in the current bitwidth */&#x000a;fun min:one Int { fun/min }&#x000a;&#x000a;/** maps each integer (except max) to the integer after it */&#x000a;fun next:Int-&gt;Int { fun/next }&#x000a;&#x000a;/** maps each integer (except min) to the integer before it */&#x000a;fun prev:Int-&gt;Int { ~next }&#x000a;&#x000a;/** given a set of integers, return the largest element */&#x000a;fun max [es: set Int]: lone Int { es - es.^prev }&#x000a;&#x000a;/** given a set of integers, return the smallest element */&#x000a;fun min [es: set Int]: lone Int { es - es.^next }&#x000a;&#x000a;/** given an integer, return all integers prior to it */&#x000a;fun prevs [e: Int]: set Int { e.^prev }&#x000a;&#x000a;/** given an integer, return all integers following it */&#x000a;fun nexts [e: Int]: set Int { e.^next }&#x000a;&#x000a;/** returns the larger of the two integers */&#x000a;fun larger [e1, e2: Int]: Int { let a=int[e1], b=int[e2] | (a&lt;b =&gt; b else a) }&#x000a;&#x000a;/** returns the smaller of the two integers */&#x000a;fun smaller [e1, e2: Int]: Int { let a=int[e1], b=int[e2] | (a&lt;b =&gt; a else b) }&#x000a;"/>
+
+</alloy>

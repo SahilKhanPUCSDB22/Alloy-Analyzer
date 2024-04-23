@@ -1,0 +1,2259 @@
+<alloy builddate="2023-06-22T06:38:33.475Z">
+
+<instance bitwidth="4" maxseq="4" mintrace="-1" maxtrace="-1" command="Run p for 4 int, exactly 6 type, exactly 35 product, exactly 8 godown, exactly 5 city, exactly 5 inf, exactly 20 customer, exactly 14 cust, exactly 16 courier, exactly 80 order, exactly 130 deliveries, exactly 8 String, exactly 14 cour" filename="/home/sahil/alloy/dbt/shopp.als" tracelength="1" backloop="0">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+   <atom label="&quot;String7&quot;"/>
+   <atom label="&quot;String6&quot;"/>
+   <atom label="&quot;String1&quot;"/>
+   <atom label="&quot;String0&quot;"/>
+   <atom label="&quot;String3&quot;"/>
+   <atom label="&quot;String2&quot;"/>
+   <atom label="&quot;String5&quot;"/>
+   <atom label="&quot;String4&quot;"/>
+</sig>
+
+<sig label="this/type" ID="4" parentID="2">
+   <atom label="type$0"/>
+   <atom label="type$1"/>
+   <atom label="type$2"/>
+   <atom label="type$3"/>
+   <atom label="type$4"/>
+   <atom label="type$5"/>
+</sig>
+
+<field label="description" ID="5" parentID="4">
+   <tuple> <atom label="type$0"/> <atom label="&quot;String3&quot;"/> </tuple>
+   <tuple> <atom label="type$1"/> <atom label="&quot;String2&quot;"/> </tuple>
+   <tuple> <atom label="type$2"/> <atom label="&quot;String4&quot;"/> </tuple>
+   <tuple> <atom label="type$3"/> <atom label="&quot;String4&quot;"/> </tuple>
+   <tuple> <atom label="type$4"/> <atom label="&quot;String2&quot;"/> </tuple>
+   <tuple> <atom label="type$5"/> <atom label="&quot;String5&quot;"/> </tuple>
+   <types> <type ID="4"/> <type ID="3"/> </types>
+</field>
+
+<field label="stock" ID="6" parentID="4">
+   <tuple> <atom label="type$0"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="type$1"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="type$2"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="type$3"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="type$4"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="type$5"/> <atom label="4"/> </tuple>
+   <types> <type ID="4"/> <type ID="1"/> </types>
+</field>
+
+<sig label="this/product" ID="7" parentID="2">
+   <atom label="product$0"/>
+   <atom label="product$1"/>
+   <atom label="product$2"/>
+   <atom label="product$3"/>
+   <atom label="product$4"/>
+   <atom label="product$5"/>
+   <atom label="product$6"/>
+   <atom label="product$7"/>
+   <atom label="product$8"/>
+   <atom label="product$9"/>
+   <atom label="product$10"/>
+   <atom label="product$11"/>
+   <atom label="product$12"/>
+   <atom label="product$13"/>
+   <atom label="product$14"/>
+   <atom label="product$15"/>
+   <atom label="product$16"/>
+   <atom label="product$17"/>
+   <atom label="product$18"/>
+   <atom label="product$19"/>
+   <atom label="product$20"/>
+   <atom label="product$21"/>
+   <atom label="product$22"/>
+   <atom label="product$23"/>
+   <atom label="product$24"/>
+   <atom label="product$25"/>
+   <atom label="product$26"/>
+   <atom label="product$27"/>
+   <atom label="product$28"/>
+   <atom label="product$29"/>
+   <atom label="product$30"/>
+   <atom label="product$31"/>
+   <atom label="product$32"/>
+   <atom label="product$33"/>
+   <atom label="product$34"/>
+</sig>
+
+<field label="prodtype" ID="8" parentID="7">
+   <tuple> <atom label="product$0"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$1"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$2"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$3"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$4"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$5"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="product$6"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$7"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$8"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$9"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="product$10"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$11"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$12"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="product$13"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$14"/> <atom label="type$3"/> </tuple>
+   <tuple> <atom label="product$15"/> <atom label="type$3"/> </tuple>
+   <tuple> <atom label="product$16"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$17"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$18"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$19"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="product$20"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="product$21"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$22"/> <atom label="type$3"/> </tuple>
+   <tuple> <atom label="product$23"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="product$24"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$25"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$26"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$27"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="product$28"/> <atom label="type$3"/> </tuple>
+   <tuple> <atom label="product$29"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="product$30"/> <atom label="type$2"/> </tuple>
+   <tuple> <atom label="product$31"/> <atom label="type$0"/> </tuple>
+   <tuple> <atom label="product$32"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$33"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="product$34"/> <atom label="type$1"/> </tuple>
+   <types> <type ID="7"/> <type ID="4"/> </types>
+</field>
+
+<field label="gdownid" ID="9" parentID="7">
+   <tuple> <atom label="product$0"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$1"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$2"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="product$3"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$4"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$5"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="product$6"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$7"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$8"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$9"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$10"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$11"/> <atom label="godown$1"/> </tuple>
+   <tuple> <atom label="product$12"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="product$13"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="product$14"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$15"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$16"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$17"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="product$18"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$19"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$20"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$21"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$22"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$23"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$24"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$25"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="product$26"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="product$27"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$28"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="product$29"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$30"/> <atom label="godown$4"/> </tuple>
+   <tuple> <atom label="product$31"/> <atom label="godown$3"/> </tuple>
+   <tuple> <atom label="product$32"/> <atom label="godown$4"/> </tuple>
+   <tuple> <atom label="product$33"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="product$34"/> <atom label="godown$7"/> </tuple>
+   <types> <type ID="7"/> <type ID="10"/> </types>
+</field>
+
+<field label="avail" ID="11" parentID="7">
+   <tuple> <atom label="product$0"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$1"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="product$2"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$3"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$4"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$5"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="product$6"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="product$7"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="product$8"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="product$9"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$10"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="product$11"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$12"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$13"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="product$14"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="product$15"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$16"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$17"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$18"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="product$19"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$20"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$21"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$22"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$23"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$24"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$25"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="product$26"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$27"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$28"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$29"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="product$30"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="product$31"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$32"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$33"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="product$34"/> <atom label="0"/> </tuple>
+   <types> <type ID="7"/> <type ID="1"/> </types>
+</field>
+
+<sig label="this/godown" ID="10" parentID="2">
+   <atom label="godown$0"/>
+   <atom label="godown$1"/>
+   <atom label="godown$2"/>
+   <atom label="godown$3"/>
+   <atom label="godown$4"/>
+   <atom label="godown$5"/>
+   <atom label="godown$6"/>
+   <atom label="godown$7"/>
+</sig>
+
+<field label="loc" ID="12" parentID="10">
+   <tuple> <atom label="godown$0"/> <atom label="city$3"/> </tuple>
+   <tuple> <atom label="godown$1"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="godown$2"/> <atom label="city$2"/> </tuple>
+   <tuple> <atom label="godown$3"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="godown$4"/> <atom label="city$0"/> </tuple>
+   <tuple> <atom label="godown$5"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="godown$6"/> <atom label="city$3"/> </tuple>
+   <tuple> <atom label="godown$7"/> <atom label="city$1"/> </tuple>
+   <types> <type ID="10"/> <type ID="13"/> </types>
+</field>
+
+<sig label="this/city" ID="13" parentID="2">
+   <atom label="city$0"/>
+   <atom label="city$1"/>
+   <atom label="city$2"/>
+   <atom label="city$3"/>
+   <atom label="city$4"/>
+</sig>
+
+<field label="info" ID="14" parentID="13">
+   <tuple> <atom label="city$0"/> <atom label="inf$4"/> </tuple>
+   <tuple> <atom label="city$1"/> <atom label="inf$3"/> </tuple>
+   <tuple> <atom label="city$2"/> <atom label="inf$2"/> </tuple>
+   <tuple> <atom label="city$3"/> <atom label="inf$1"/> </tuple>
+   <tuple> <atom label="city$4"/> <atom label="inf$3"/> </tuple>
+   <types> <type ID="13"/> <type ID="15"/> </types>
+</field>
+
+<sig label="this/inf" ID="15" parentID="2">
+   <atom label="inf$0"/>
+   <atom label="inf$1"/>
+   <atom label="inf$2"/>
+   <atom label="inf$3"/>
+   <atom label="inf$4"/>
+</sig>
+
+<sig label="this/customer" ID="16" parentID="2">
+   <atom label="customer$0"/>
+   <atom label="customer$1"/>
+   <atom label="customer$2"/>
+   <atom label="customer$3"/>
+   <atom label="customer$4"/>
+   <atom label="customer$5"/>
+   <atom label="customer$6"/>
+   <atom label="customer$7"/>
+   <atom label="customer$8"/>
+   <atom label="customer$9"/>
+   <atom label="customer$10"/>
+   <atom label="customer$11"/>
+   <atom label="customer$12"/>
+   <atom label="customer$13"/>
+   <atom label="customer$14"/>
+   <atom label="customer$15"/>
+   <atom label="customer$16"/>
+   <atom label="customer$17"/>
+   <atom label="customer$18"/>
+   <atom label="customer$19"/>
+</sig>
+
+<field label="name" ID="17" parentID="16">
+   <tuple> <atom label="customer$0"/> <atom label="cust$12"/> </tuple>
+   <tuple> <atom label="customer$1"/> <atom label="cust$13"/> </tuple>
+   <tuple> <atom label="customer$2"/> <atom label="cust$10"/> </tuple>
+   <tuple> <atom label="customer$3"/> <atom label="cust$12"/> </tuple>
+   <tuple> <atom label="customer$4"/> <atom label="cust$11"/> </tuple>
+   <tuple> <atom label="customer$5"/> <atom label="cust$12"/> </tuple>
+   <tuple> <atom label="customer$6"/> <atom label="cust$13"/> </tuple>
+   <tuple> <atom label="customer$7"/> <atom label="cust$12"/> </tuple>
+   <tuple> <atom label="customer$8"/> <atom label="cust$11"/> </tuple>
+   <tuple> <atom label="customer$9"/> <atom label="cust$10"/> </tuple>
+   <tuple> <atom label="customer$10"/> <atom label="cust$9"/> </tuple>
+   <tuple> <atom label="customer$11"/> <atom label="cust$8"/> </tuple>
+   <tuple> <atom label="customer$12"/> <atom label="cust$7"/> </tuple>
+   <tuple> <atom label="customer$13"/> <atom label="cust$6"/> </tuple>
+   <tuple> <atom label="customer$14"/> <atom label="cust$5"/> </tuple>
+   <tuple> <atom label="customer$15"/> <atom label="cust$4"/> </tuple>
+   <tuple> <atom label="customer$16"/> <atom label="cust$3"/> </tuple>
+   <tuple> <atom label="customer$17"/> <atom label="cust$2"/> </tuple>
+   <tuple> <atom label="customer$18"/> <atom label="cust$1"/> </tuple>
+   <tuple> <atom label="customer$19"/> <atom label="cust$0"/> </tuple>
+   <types> <type ID="16"/> <type ID="18"/> </types>
+</field>
+
+<field label="loc" ID="19" parentID="16">
+   <tuple> <atom label="customer$0"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="customer$1"/> <atom label="city$3"/> </tuple>
+   <tuple> <atom label="customer$2"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="customer$3"/> <atom label="city$2"/> </tuple>
+   <tuple> <atom label="customer$4"/> <atom label="city$1"/> </tuple>
+   <tuple> <atom label="customer$5"/> <atom label="city$0"/> </tuple>
+   <tuple> <atom label="customer$6"/> <atom label="city$3"/> </tuple>
+   <tuple> <atom label="customer$7"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="customer$8"/> <atom label="city$3"/> </tuple>
+   <tuple> <atom label="customer$9"/> <atom label="city$3"/> </tuple>
+   <tuple> <atom label="customer$10"/> <atom label="city$2"/> </tuple>
+   <tuple> <atom label="customer$11"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="customer$12"/> <atom label="city$3"/> </tuple>
+   <tuple> <atom label="customer$13"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="customer$14"/> <atom label="city$3"/> </tuple>
+   <tuple> <atom label="customer$15"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="customer$16"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="customer$17"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="customer$18"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="customer$19"/> <atom label="city$3"/> </tuple>
+   <types> <type ID="16"/> <type ID="13"/> </types>
+</field>
+
+<sig label="this/cust" ID="18" parentID="2">
+   <atom label="cust$0"/>
+   <atom label="cust$1"/>
+   <atom label="cust$2"/>
+   <atom label="cust$3"/>
+   <atom label="cust$4"/>
+   <atom label="cust$5"/>
+   <atom label="cust$6"/>
+   <atom label="cust$7"/>
+   <atom label="cust$8"/>
+   <atom label="cust$9"/>
+   <atom label="cust$10"/>
+   <atom label="cust$11"/>
+   <atom label="cust$12"/>
+   <atom label="cust$13"/>
+</sig>
+
+<sig label="this/order" ID="20" parentID="2">
+   <atom label="order$0"/>
+   <atom label="order$1"/>
+   <atom label="order$2"/>
+   <atom label="order$3"/>
+   <atom label="order$4"/>
+   <atom label="order$5"/>
+   <atom label="order$6"/>
+   <atom label="order$7"/>
+   <atom label="order$8"/>
+   <atom label="order$9"/>
+   <atom label="order$10"/>
+   <atom label="order$11"/>
+   <atom label="order$12"/>
+   <atom label="order$13"/>
+   <atom label="order$14"/>
+   <atom label="order$15"/>
+   <atom label="order$16"/>
+   <atom label="order$17"/>
+   <atom label="order$18"/>
+   <atom label="order$19"/>
+   <atom label="order$20"/>
+   <atom label="order$21"/>
+   <atom label="order$22"/>
+   <atom label="order$23"/>
+   <atom label="order$24"/>
+   <atom label="order$25"/>
+   <atom label="order$26"/>
+   <atom label="order$27"/>
+   <atom label="order$28"/>
+   <atom label="order$29"/>
+   <atom label="order$30"/>
+   <atom label="order$31"/>
+   <atom label="order$32"/>
+   <atom label="order$33"/>
+   <atom label="order$34"/>
+   <atom label="order$35"/>
+   <atom label="order$36"/>
+   <atom label="order$37"/>
+   <atom label="order$38"/>
+   <atom label="order$39"/>
+   <atom label="order$40"/>
+   <atom label="order$41"/>
+   <atom label="order$42"/>
+   <atom label="order$43"/>
+   <atom label="order$44"/>
+   <atom label="order$45"/>
+   <atom label="order$46"/>
+   <atom label="order$47"/>
+   <atom label="order$48"/>
+   <atom label="order$49"/>
+   <atom label="order$50"/>
+   <atom label="order$51"/>
+   <atom label="order$52"/>
+   <atom label="order$53"/>
+   <atom label="order$54"/>
+   <atom label="order$55"/>
+   <atom label="order$56"/>
+   <atom label="order$57"/>
+   <atom label="order$58"/>
+   <atom label="order$59"/>
+   <atom label="order$60"/>
+   <atom label="order$61"/>
+   <atom label="order$62"/>
+   <atom label="order$63"/>
+   <atom label="order$64"/>
+   <atom label="order$65"/>
+   <atom label="order$66"/>
+   <atom label="order$67"/>
+   <atom label="order$68"/>
+   <atom label="order$69"/>
+   <atom label="order$70"/>
+   <atom label="order$71"/>
+   <atom label="order$72"/>
+   <atom label="order$73"/>
+   <atom label="order$74"/>
+   <atom label="order$75"/>
+   <atom label="order$76"/>
+   <atom label="order$77"/>
+   <atom label="order$78"/>
+   <atom label="order$79"/>
+</sig>
+
+<field label="custt" ID="21" parentID="20">
+   <tuple> <atom label="order$0"/> <atom label="customer$17"/> </tuple>
+   <tuple> <atom label="order$1"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$2"/> <atom label="customer$12"/> </tuple>
+   <tuple> <atom label="order$3"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$4"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$5"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$6"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$7"/> <atom label="customer$1"/> </tuple>
+   <tuple> <atom label="order$8"/> <atom label="customer$16"/> </tuple>
+   <tuple> <atom label="order$9"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$10"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$11"/> <atom label="customer$13"/> </tuple>
+   <tuple> <atom label="order$12"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$13"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$14"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$15"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$16"/> <atom label="customer$3"/> </tuple>
+   <tuple> <atom label="order$17"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$18"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$19"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$20"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$21"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$22"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$23"/> <atom label="customer$17"/> </tuple>
+   <tuple> <atom label="order$24"/> <atom label="customer$14"/> </tuple>
+   <tuple> <atom label="order$25"/> <atom label="customer$13"/> </tuple>
+   <tuple> <atom label="order$26"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$27"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$28"/> <atom label="customer$16"/> </tuple>
+   <tuple> <atom label="order$29"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$30"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$31"/> <atom label="customer$17"/> </tuple>
+   <tuple> <atom label="order$32"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$33"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$34"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$35"/> <atom label="customer$9"/> </tuple>
+   <tuple> <atom label="order$36"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$37"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$38"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$39"/> <atom label="customer$11"/> </tuple>
+   <tuple> <atom label="order$40"/> <atom label="customer$17"/> </tuple>
+   <tuple> <atom label="order$41"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$42"/> <atom label="customer$16"/> </tuple>
+   <tuple> <atom label="order$43"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$44"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$45"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$46"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$47"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$48"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$49"/> <atom label="customer$4"/> </tuple>
+   <tuple> <atom label="order$50"/> <atom label="customer$7"/> </tuple>
+   <tuple> <atom label="order$51"/> <atom label="customer$5"/> </tuple>
+   <tuple> <atom label="order$52"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$53"/> <atom label="customer$6"/> </tuple>
+   <tuple> <atom label="order$54"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$55"/> <atom label="customer$17"/> </tuple>
+   <tuple> <atom label="order$56"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$57"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$58"/> <atom label="customer$16"/> </tuple>
+   <tuple> <atom label="order$59"/> <atom label="customer$16"/> </tuple>
+   <tuple> <atom label="order$60"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$61"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$62"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$63"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="order$64"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$65"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$66"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$67"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$68"/> <atom label="customer$15"/> </tuple>
+   <tuple> <atom label="order$69"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$70"/> <atom label="customer$17"/> </tuple>
+   <tuple> <atom label="order$71"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="order$72"/> <atom label="customer$17"/> </tuple>
+   <tuple> <atom label="order$73"/> <atom label="customer$8"/> </tuple>
+   <tuple> <atom label="order$74"/> <atom label="customer$17"/> </tuple>
+   <tuple> <atom label="order$75"/> <atom label="customer$2"/> </tuple>
+   <tuple> <atom label="order$76"/> <atom label="customer$0"/> </tuple>
+   <tuple> <atom label="order$77"/> <atom label="customer$14"/> </tuple>
+   <tuple> <atom label="order$78"/> <atom label="customer$10"/> </tuple>
+   <tuple> <atom label="order$79"/> <atom label="customer$11"/> </tuple>
+   <types> <type ID="20"/> <type ID="16"/> </types>
+</field>
+
+<field label="prod" ID="22" parentID="20">
+   <tuple> <atom label="order$0"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$1"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$2"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$3"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$4"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$5"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$6"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$7"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$8"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$9"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$10"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$11"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$12"/> <atom label="type$2"/> </tuple>
+   <tuple> <atom label="order$13"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$14"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$15"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$16"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$17"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$18"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$19"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$20"/> <atom label="type$3"/> </tuple>
+   <tuple> <atom label="order$21"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$22"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$23"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$24"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$25"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$26"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$27"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$28"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$29"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$30"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$31"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$32"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$33"/> <atom label="type$2"/> </tuple>
+   <tuple> <atom label="order$34"/> <atom label="type$3"/> </tuple>
+   <tuple> <atom label="order$35"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$36"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$37"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$38"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$39"/> <atom label="type$3"/> </tuple>
+   <tuple> <atom label="order$40"/> <atom label="type$2"/> </tuple>
+   <tuple> <atom label="order$41"/> <atom label="type$1"/> </tuple>
+   <tuple> <atom label="order$42"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$43"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$44"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$45"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$46"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$47"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$48"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$49"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$50"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$51"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$52"/> <atom label="type$3"/> </tuple>
+   <tuple> <atom label="order$53"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$54"/> <atom label="type$1"/> </tuple>
+   <tuple> <atom label="order$55"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$56"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$57"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$58"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$59"/> <atom label="type$2"/> </tuple>
+   <tuple> <atom label="order$60"/> <atom label="type$0"/> </tuple>
+   <tuple> <atom label="order$61"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$62"/> <atom label="type$2"/> </tuple>
+   <tuple> <atom label="order$63"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$64"/> <atom label="type$0"/> </tuple>
+   <tuple> <atom label="order$65"/> <atom label="type$2"/> </tuple>
+   <tuple> <atom label="order$66"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$67"/> <atom label="type$1"/> </tuple>
+   <tuple> <atom label="order$68"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$69"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$70"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$71"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$72"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$73"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$74"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$75"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$76"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$77"/> <atom label="type$5"/> </tuple>
+   <tuple> <atom label="order$78"/> <atom label="type$4"/> </tuple>
+   <tuple> <atom label="order$79"/> <atom label="type$5"/> </tuple>
+   <types> <type ID="20"/> <type ID="4"/> </types>
+</field>
+
+<field label="quan" ID="23" parentID="20">
+   <tuple> <atom label="order$0"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$1"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$2"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$3"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$4"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="order$5"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$6"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$7"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$8"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$9"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="order$10"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$11"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$12"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$13"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$14"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$15"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$16"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$17"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$18"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="order$19"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$20"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$21"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$22"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$23"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$24"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$25"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="order$26"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$27"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$28"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$29"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$30"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$31"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$32"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$33"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$34"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$35"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$36"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$37"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$38"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$39"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$40"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$41"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$42"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$43"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$44"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="order$45"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$46"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$47"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$48"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$49"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$50"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$51"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$52"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$53"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$54"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$55"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$56"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$57"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$58"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$59"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$60"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$61"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$62"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="order$63"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$64"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$65"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="order$66"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$67"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$68"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$69"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$70"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$71"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$72"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$73"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$74"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$75"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$76"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$77"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$78"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$79"/> <atom label="7"/> </tuple>
+   <types> <type ID="20"/> <type ID="1"/> </types>
+</field>
+
+<field label="date" ID="24" parentID="20">
+   <tuple> <atom label="order$0"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$1"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$2"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$3"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$4"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$5"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$6"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$7"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$8"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$9"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$10"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$11"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$12"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$13"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$14"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$15"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$16"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$17"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="order$18"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$19"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$20"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$21"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$22"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$23"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$24"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$25"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$26"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$27"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$28"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$29"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$30"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$31"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="order$32"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$33"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$34"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$35"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$36"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$37"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$38"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$39"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$40"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$41"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$42"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$43"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$44"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$45"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$46"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$47"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$48"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="order$49"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$50"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$51"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$52"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$53"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="order$54"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$55"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$56"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$57"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$58"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$59"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$60"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$61"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$62"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$63"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="order$64"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$65"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$66"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$67"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$68"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$69"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$70"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$71"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="order$72"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$73"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$74"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="order$75"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="order$76"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="order$77"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="order$78"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="order$79"/> <atom label="2"/> </tuple>
+   <types> <type ID="20"/> <type ID="1"/> </types>
+</field>
+
+<field label="status" ID="25" parentID="20">
+   <tuple> <atom label="order$0"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$1"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$2"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$3"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$4"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$5"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$6"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$7"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$8"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$9"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$10"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$11"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$12"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$13"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$14"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$15"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$16"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$17"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$18"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$19"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$20"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$21"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$22"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$23"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$24"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$25"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$26"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$27"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$28"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$29"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$30"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$31"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$32"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$33"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$34"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$35"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$36"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$37"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$38"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$39"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$40"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$41"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$42"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$43"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$44"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$45"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$46"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$47"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$48"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$49"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$50"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$51"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$52"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$53"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$54"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$55"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$56"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$57"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$58"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$59"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$60"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$61"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$62"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$63"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$64"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$65"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$66"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$67"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$68"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$69"/> <atom label="shipped$0"/> </tuple>
+   <tuple> <atom label="order$70"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$71"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$72"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$73"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$74"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$75"/> <atom label="ordered$0"/> </tuple>
+   <tuple> <atom label="order$76"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$77"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$78"/> <atom label="delivered$0"/> </tuple>
+   <tuple> <atom label="order$79"/> <atom label="shipped$0"/> </tuple>
+   <types> <type ID="20"/> <type ID="26"/> </types>
+</field>
+
+<sig label="this/ordered" ID="27" parentID="26" one="yes">
+   <atom label="ordered$0"/>
+</sig>
+
+<sig label="this/shipped" ID="28" parentID="26" one="yes">
+   <atom label="shipped$0"/>
+</sig>
+
+<sig label="this/delivered" ID="29" parentID="26" one="yes">
+   <atom label="delivered$0"/>
+</sig>
+
+<sig label="this/stat" ID="26" parentID="2" abstract="yes">
+</sig>
+
+<sig label="this/courier" ID="30" parentID="2">
+   <atom label="courier$0"/>
+   <atom label="courier$1"/>
+   <atom label="courier$2"/>
+   <atom label="courier$3"/>
+   <atom label="courier$4"/>
+   <atom label="courier$5"/>
+   <atom label="courier$6"/>
+   <atom label="courier$7"/>
+   <atom label="courier$8"/>
+   <atom label="courier$9"/>
+   <atom label="courier$10"/>
+   <atom label="courier$11"/>
+   <atom label="courier$12"/>
+   <atom label="courier$13"/>
+   <atom label="courier$14"/>
+   <atom label="courier$15"/>
+</sig>
+
+<field label="name" ID="31" parentID="30">
+   <tuple> <atom label="courier$0"/> <atom label="cour$3"/> </tuple>
+   <tuple> <atom label="courier$1"/> <atom label="cour$11"/> </tuple>
+   <tuple> <atom label="courier$2"/> <atom label="cour$13"/> </tuple>
+   <tuple> <atom label="courier$3"/> <atom label="cour$12"/> </tuple>
+   <tuple> <atom label="courier$4"/> <atom label="cour$11"/> </tuple>
+   <tuple> <atom label="courier$5"/> <atom label="cour$10"/> </tuple>
+   <tuple> <atom label="courier$6"/> <atom label="cour$9"/> </tuple>
+   <tuple> <atom label="courier$7"/> <atom label="cour$8"/> </tuple>
+   <tuple> <atom label="courier$8"/> <atom label="cour$7"/> </tuple>
+   <tuple> <atom label="courier$9"/> <atom label="cour$6"/> </tuple>
+   <tuple> <atom label="courier$10"/> <atom label="cour$5"/> </tuple>
+   <tuple> <atom label="courier$11"/> <atom label="cour$4"/> </tuple>
+   <tuple> <atom label="courier$12"/> <atom label="cour$3"/> </tuple>
+   <tuple> <atom label="courier$13"/> <atom label="cour$2"/> </tuple>
+   <tuple> <atom label="courier$14"/> <atom label="cour$1"/> </tuple>
+   <tuple> <atom label="courier$15"/> <atom label="cour$0"/> </tuple>
+   <types> <type ID="30"/> <type ID="32"/> </types>
+</field>
+
+<field label="loc" ID="33" parentID="30">
+   <tuple> <atom label="courier$0"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="courier$1"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="courier$2"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="courier$3"/> <atom label="city$1"/> </tuple>
+   <tuple> <atom label="courier$4"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="courier$5"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="courier$6"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="courier$7"/> <atom label="city$4"/> </tuple>
+   <tuple> <atom label="courier$8"/> <atom label="city$3"/> </tuple>
+   <tuple> <atom label="courier$9"/> <atom label="city$3"/> </tuple>
+   <tuple> <atom label="courier$10"/> <atom label="city$2"/> </tuple>
+   <tuple> <atom label="courier$11"/> <atom label="city$3"/> </tuple>
+   <tuple> <atom label="courier$12"/> <atom label="city$2"/> </tuple>
+   <tuple> <atom label="courier$13"/> <atom label="city$3"/> </tuple>
+   <tuple> <atom label="courier$14"/> <atom label="city$1"/> </tuple>
+   <tuple> <atom label="courier$15"/> <atom label="city$0"/> </tuple>
+   <types> <type ID="30"/> <type ID="13"/> </types>
+</field>
+
+<field label="stats" ID="34" parentID="30">
+   <tuple> <atom label="courier$0"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="courier$1"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="courier$2"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="courier$3"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="courier$4"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="courier$5"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="courier$6"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="courier$7"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="courier$8"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="courier$9"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="courier$10"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="courier$11"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="courier$12"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="courier$13"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="courier$14"/> <atom label="0"/> </tuple>
+   <tuple> <atom label="courier$15"/> <atom label="1"/> </tuple>
+   <types> <type ID="30"/> <type ID="1"/> </types>
+</field>
+
+<sig label="this/cour" ID="32" parentID="2">
+   <atom label="cour$0"/>
+   <atom label="cour$1"/>
+   <atom label="cour$2"/>
+   <atom label="cour$3"/>
+   <atom label="cour$4"/>
+   <atom label="cour$5"/>
+   <atom label="cour$6"/>
+   <atom label="cour$7"/>
+   <atom label="cour$8"/>
+   <atom label="cour$9"/>
+   <atom label="cour$10"/>
+   <atom label="cour$11"/>
+   <atom label="cour$12"/>
+   <atom label="cour$13"/>
+</sig>
+
+<sig label="this/deliveries" ID="35" parentID="2">
+   <atom label="deliveries$0"/>
+   <atom label="deliveries$1"/>
+   <atom label="deliveries$2"/>
+   <atom label="deliveries$3"/>
+   <atom label="deliveries$4"/>
+   <atom label="deliveries$5"/>
+   <atom label="deliveries$6"/>
+   <atom label="deliveries$7"/>
+   <atom label="deliveries$8"/>
+   <atom label="deliveries$9"/>
+   <atom label="deliveries$10"/>
+   <atom label="deliveries$11"/>
+   <atom label="deliveries$12"/>
+   <atom label="deliveries$13"/>
+   <atom label="deliveries$14"/>
+   <atom label="deliveries$15"/>
+   <atom label="deliveries$16"/>
+   <atom label="deliveries$17"/>
+   <atom label="deliveries$18"/>
+   <atom label="deliveries$19"/>
+   <atom label="deliveries$20"/>
+   <atom label="deliveries$21"/>
+   <atom label="deliveries$22"/>
+   <atom label="deliveries$23"/>
+   <atom label="deliveries$24"/>
+   <atom label="deliveries$25"/>
+   <atom label="deliveries$26"/>
+   <atom label="deliveries$27"/>
+   <atom label="deliveries$28"/>
+   <atom label="deliveries$29"/>
+   <atom label="deliveries$30"/>
+   <atom label="deliveries$31"/>
+   <atom label="deliveries$32"/>
+   <atom label="deliveries$33"/>
+   <atom label="deliveries$34"/>
+   <atom label="deliveries$35"/>
+   <atom label="deliveries$36"/>
+   <atom label="deliveries$37"/>
+   <atom label="deliveries$38"/>
+   <atom label="deliveries$39"/>
+   <atom label="deliveries$40"/>
+   <atom label="deliveries$41"/>
+   <atom label="deliveries$42"/>
+   <atom label="deliveries$43"/>
+   <atom label="deliveries$44"/>
+   <atom label="deliveries$45"/>
+   <atom label="deliveries$46"/>
+   <atom label="deliveries$47"/>
+   <atom label="deliveries$48"/>
+   <atom label="deliveries$49"/>
+   <atom label="deliveries$50"/>
+   <atom label="deliveries$51"/>
+   <atom label="deliveries$52"/>
+   <atom label="deliveries$53"/>
+   <atom label="deliveries$54"/>
+   <atom label="deliveries$55"/>
+   <atom label="deliveries$56"/>
+   <atom label="deliveries$57"/>
+   <atom label="deliveries$58"/>
+   <atom label="deliveries$59"/>
+   <atom label="deliveries$60"/>
+   <atom label="deliveries$61"/>
+   <atom label="deliveries$62"/>
+   <atom label="deliveries$63"/>
+   <atom label="deliveries$64"/>
+   <atom label="deliveries$65"/>
+   <atom label="deliveries$66"/>
+   <atom label="deliveries$67"/>
+   <atom label="deliveries$68"/>
+   <atom label="deliveries$69"/>
+   <atom label="deliveries$70"/>
+   <atom label="deliveries$71"/>
+   <atom label="deliveries$72"/>
+   <atom label="deliveries$73"/>
+   <atom label="deliveries$74"/>
+   <atom label="deliveries$75"/>
+   <atom label="deliveries$76"/>
+   <atom label="deliveries$77"/>
+   <atom label="deliveries$78"/>
+   <atom label="deliveries$79"/>
+   <atom label="deliveries$80"/>
+   <atom label="deliveries$81"/>
+   <atom label="deliveries$82"/>
+   <atom label="deliveries$83"/>
+   <atom label="deliveries$84"/>
+   <atom label="deliveries$85"/>
+   <atom label="deliveries$86"/>
+   <atom label="deliveries$87"/>
+   <atom label="deliveries$88"/>
+   <atom label="deliveries$89"/>
+   <atom label="deliveries$90"/>
+   <atom label="deliveries$91"/>
+   <atom label="deliveries$92"/>
+   <atom label="deliveries$93"/>
+   <atom label="deliveries$94"/>
+   <atom label="deliveries$95"/>
+   <atom label="deliveries$96"/>
+   <atom label="deliveries$97"/>
+   <atom label="deliveries$98"/>
+   <atom label="deliveries$99"/>
+   <atom label="deliveries$100"/>
+   <atom label="deliveries$101"/>
+   <atom label="deliveries$102"/>
+   <atom label="deliveries$103"/>
+   <atom label="deliveries$104"/>
+   <atom label="deliveries$105"/>
+   <atom label="deliveries$106"/>
+   <atom label="deliveries$107"/>
+   <atom label="deliveries$108"/>
+   <atom label="deliveries$109"/>
+   <atom label="deliveries$110"/>
+   <atom label="deliveries$111"/>
+   <atom label="deliveries$112"/>
+   <atom label="deliveries$113"/>
+   <atom label="deliveries$114"/>
+   <atom label="deliveries$115"/>
+   <atom label="deliveries$116"/>
+   <atom label="deliveries$117"/>
+   <atom label="deliveries$118"/>
+   <atom label="deliveries$119"/>
+   <atom label="deliveries$120"/>
+   <atom label="deliveries$121"/>
+   <atom label="deliveries$122"/>
+   <atom label="deliveries$123"/>
+   <atom label="deliveries$124"/>
+   <atom label="deliveries$125"/>
+   <atom label="deliveries$126"/>
+   <atom label="deliveries$127"/>
+   <atom label="deliveries$128"/>
+   <atom label="deliveries$129"/>
+</sig>
+
+<field label="ord" ID="36" parentID="35">
+   <tuple> <atom label="deliveries$0"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$1"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$2"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$3"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$4"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$5"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$6"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$7"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$8"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$9"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$10"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$11"/> <atom label="order$75"/> </tuple>
+   <tuple> <atom label="deliveries$12"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$13"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$14"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$15"/> <atom label="order$77"/> </tuple>
+   <tuple> <atom label="deliveries$16"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$17"/> <atom label="order$76"/> </tuple>
+   <tuple> <atom label="deliveries$18"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$19"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$20"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$21"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$22"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$23"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$24"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$25"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$26"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$27"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$28"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$29"/> <atom label="order$77"/> </tuple>
+   <tuple> <atom label="deliveries$30"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$31"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$32"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$33"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$34"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$35"/> <atom label="order$75"/> </tuple>
+   <tuple> <atom label="deliveries$36"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$37"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$38"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$39"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$40"/> <atom label="order$76"/> </tuple>
+   <tuple> <atom label="deliveries$41"/> <atom label="order$21"/> </tuple>
+   <tuple> <atom label="deliveries$42"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$43"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$44"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$45"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$46"/> <atom label="order$71"/> </tuple>
+   <tuple> <atom label="deliveries$47"/> <atom label="order$7"/> </tuple>
+   <tuple> <atom label="deliveries$48"/> <atom label="order$4"/> </tuple>
+   <tuple> <atom label="deliveries$49"/> <atom label="order$11"/> </tuple>
+   <tuple> <atom label="deliveries$50"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="deliveries$51"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="deliveries$52"/> <atom label="order$77"/> </tuple>
+   <tuple> <atom label="deliveries$53"/> <atom label="order$76"/> </tuple>
+   <tuple> <atom label="deliveries$54"/> <atom label="order$75"/> </tuple>
+   <tuple> <atom label="deliveries$55"/> <atom label="order$74"/> </tuple>
+   <tuple> <atom label="deliveries$56"/> <atom label="order$73"/> </tuple>
+   <tuple> <atom label="deliveries$57"/> <atom label="order$72"/> </tuple>
+   <tuple> <atom label="deliveries$58"/> <atom label="order$71"/> </tuple>
+   <tuple> <atom label="deliveries$59"/> <atom label="order$70"/> </tuple>
+   <tuple> <atom label="deliveries$60"/> <atom label="order$69"/> </tuple>
+   <tuple> <atom label="deliveries$61"/> <atom label="order$68"/> </tuple>
+   <tuple> <atom label="deliveries$62"/> <atom label="order$67"/> </tuple>
+   <tuple> <atom label="deliveries$63"/> <atom label="order$66"/> </tuple>
+   <tuple> <atom label="deliveries$64"/> <atom label="order$65"/> </tuple>
+   <tuple> <atom label="deliveries$65"/> <atom label="order$64"/> </tuple>
+   <tuple> <atom label="deliveries$66"/> <atom label="order$63"/> </tuple>
+   <tuple> <atom label="deliveries$67"/> <atom label="order$62"/> </tuple>
+   <tuple> <atom label="deliveries$68"/> <atom label="order$61"/> </tuple>
+   <tuple> <atom label="deliveries$69"/> <atom label="order$60"/> </tuple>
+   <tuple> <atom label="deliveries$70"/> <atom label="order$59"/> </tuple>
+   <tuple> <atom label="deliveries$71"/> <atom label="order$58"/> </tuple>
+   <tuple> <atom label="deliveries$72"/> <atom label="order$57"/> </tuple>
+   <tuple> <atom label="deliveries$73"/> <atom label="order$56"/> </tuple>
+   <tuple> <atom label="deliveries$74"/> <atom label="order$55"/> </tuple>
+   <tuple> <atom label="deliveries$75"/> <atom label="order$54"/> </tuple>
+   <tuple> <atom label="deliveries$76"/> <atom label="order$53"/> </tuple>
+   <tuple> <atom label="deliveries$77"/> <atom label="order$52"/> </tuple>
+   <tuple> <atom label="deliveries$78"/> <atom label="order$51"/> </tuple>
+   <tuple> <atom label="deliveries$79"/> <atom label="order$50"/> </tuple>
+   <tuple> <atom label="deliveries$80"/> <atom label="order$49"/> </tuple>
+   <tuple> <atom label="deliveries$81"/> <atom label="order$48"/> </tuple>
+   <tuple> <atom label="deliveries$82"/> <atom label="order$47"/> </tuple>
+   <tuple> <atom label="deliveries$83"/> <atom label="order$46"/> </tuple>
+   <tuple> <atom label="deliveries$84"/> <atom label="order$45"/> </tuple>
+   <tuple> <atom label="deliveries$85"/> <atom label="order$44"/> </tuple>
+   <tuple> <atom label="deliveries$86"/> <atom label="order$43"/> </tuple>
+   <tuple> <atom label="deliveries$87"/> <atom label="order$42"/> </tuple>
+   <tuple> <atom label="deliveries$88"/> <atom label="order$41"/> </tuple>
+   <tuple> <atom label="deliveries$89"/> <atom label="order$40"/> </tuple>
+   <tuple> <atom label="deliveries$90"/> <atom label="order$39"/> </tuple>
+   <tuple> <atom label="deliveries$91"/> <atom label="order$38"/> </tuple>
+   <tuple> <atom label="deliveries$92"/> <atom label="order$37"/> </tuple>
+   <tuple> <atom label="deliveries$93"/> <atom label="order$36"/> </tuple>
+   <tuple> <atom label="deliveries$94"/> <atom label="order$35"/> </tuple>
+   <tuple> <atom label="deliveries$95"/> <atom label="order$34"/> </tuple>
+   <tuple> <atom label="deliveries$96"/> <atom label="order$33"/> </tuple>
+   <tuple> <atom label="deliveries$97"/> <atom label="order$32"/> </tuple>
+   <tuple> <atom label="deliveries$98"/> <atom label="order$31"/> </tuple>
+   <tuple> <atom label="deliveries$99"/> <atom label="order$30"/> </tuple>
+   <tuple> <atom label="deliveries$100"/> <atom label="order$29"/> </tuple>
+   <tuple> <atom label="deliveries$101"/> <atom label="order$28"/> </tuple>
+   <tuple> <atom label="deliveries$102"/> <atom label="order$27"/> </tuple>
+   <tuple> <atom label="deliveries$103"/> <atom label="order$26"/> </tuple>
+   <tuple> <atom label="deliveries$104"/> <atom label="order$25"/> </tuple>
+   <tuple> <atom label="deliveries$105"/> <atom label="order$24"/> </tuple>
+   <tuple> <atom label="deliveries$106"/> <atom label="order$23"/> </tuple>
+   <tuple> <atom label="deliveries$107"/> <atom label="order$22"/> </tuple>
+   <tuple> <atom label="deliveries$108"/> <atom label="order$21"/> </tuple>
+   <tuple> <atom label="deliveries$109"/> <atom label="order$20"/> </tuple>
+   <tuple> <atom label="deliveries$110"/> <atom label="order$19"/> </tuple>
+   <tuple> <atom label="deliveries$111"/> <atom label="order$18"/> </tuple>
+   <tuple> <atom label="deliveries$112"/> <atom label="order$17"/> </tuple>
+   <tuple> <atom label="deliveries$113"/> <atom label="order$16"/> </tuple>
+   <tuple> <atom label="deliveries$114"/> <atom label="order$15"/> </tuple>
+   <tuple> <atom label="deliveries$115"/> <atom label="order$14"/> </tuple>
+   <tuple> <atom label="deliveries$116"/> <atom label="order$13"/> </tuple>
+   <tuple> <atom label="deliveries$117"/> <atom label="order$12"/> </tuple>
+   <tuple> <atom label="deliveries$118"/> <atom label="order$11"/> </tuple>
+   <tuple> <atom label="deliveries$119"/> <atom label="order$10"/> </tuple>
+   <tuple> <atom label="deliveries$120"/> <atom label="order$9"/> </tuple>
+   <tuple> <atom label="deliveries$121"/> <atom label="order$8"/> </tuple>
+   <tuple> <atom label="deliveries$122"/> <atom label="order$7"/> </tuple>
+   <tuple> <atom label="deliveries$123"/> <atom label="order$6"/> </tuple>
+   <tuple> <atom label="deliveries$124"/> <atom label="order$5"/> </tuple>
+   <tuple> <atom label="deliveries$125"/> <atom label="order$4"/> </tuple>
+   <tuple> <atom label="deliveries$126"/> <atom label="order$3"/> </tuple>
+   <tuple> <atom label="deliveries$127"/> <atom label="order$2"/> </tuple>
+   <tuple> <atom label="deliveries$128"/> <atom label="order$1"/> </tuple>
+   <tuple> <atom label="deliveries$129"/> <atom label="order$0"/> </tuple>
+   <types> <type ID="35"/> <type ID="20"/> </types>
+</field>
+
+<field label="prod" ID="37" parentID="35">
+   <tuple> <atom label="deliveries$0"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$1"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$2"/> <atom label="product$32"/> </tuple>
+   <tuple> <atom label="deliveries$3"/> <atom label="product$31"/> </tuple>
+   <tuple> <atom label="deliveries$4"/> <atom label="product$30"/> </tuple>
+   <tuple> <atom label="deliveries$5"/> <atom label="product$29"/> </tuple>
+   <tuple> <atom label="deliveries$6"/> <atom label="product$28"/> </tuple>
+   <tuple> <atom label="deliveries$7"/> <atom label="product$27"/> </tuple>
+   <tuple> <atom label="deliveries$8"/> <atom label="product$26"/> </tuple>
+   <tuple> <atom label="deliveries$9"/> <atom label="product$25"/> </tuple>
+   <tuple> <atom label="deliveries$10"/> <atom label="product$24"/> </tuple>
+   <tuple> <atom label="deliveries$11"/> <atom label="product$23"/> </tuple>
+   <tuple> <atom label="deliveries$12"/> <atom label="product$22"/> </tuple>
+   <tuple> <atom label="deliveries$13"/> <atom label="product$21"/> </tuple>
+   <tuple> <atom label="deliveries$14"/> <atom label="product$20"/> </tuple>
+   <tuple> <atom label="deliveries$15"/> <atom label="product$19"/> </tuple>
+   <tuple> <atom label="deliveries$16"/> <atom label="product$18"/> </tuple>
+   <tuple> <atom label="deliveries$17"/> <atom label="product$17"/> </tuple>
+   <tuple> <atom label="deliveries$18"/> <atom label="product$16"/> </tuple>
+   <tuple> <atom label="deliveries$19"/> <atom label="product$15"/> </tuple>
+   <tuple> <atom label="deliveries$20"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$21"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$22"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$23"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$24"/> <atom label="product$14"/> </tuple>
+   <tuple> <atom label="deliveries$25"/> <atom label="product$13"/> </tuple>
+   <tuple> <atom label="deliveries$26"/> <atom label="product$12"/> </tuple>
+   <tuple> <atom label="deliveries$27"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$28"/> <atom label="product$32"/> </tuple>
+   <tuple> <atom label="deliveries$29"/> <atom label="product$32"/> </tuple>
+   <tuple> <atom label="deliveries$30"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$31"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$32"/> <atom label="product$32"/> </tuple>
+   <tuple> <atom label="deliveries$33"/> <atom label="product$31"/> </tuple>
+   <tuple> <atom label="deliveries$34"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$35"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$36"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$37"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$38"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$39"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$40"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$41"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$42"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$43"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$44"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$45"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$46"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$47"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$48"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$49"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$50"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$51"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$52"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$53"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$54"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$55"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$56"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$57"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$58"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$59"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$60"/> <atom label="product$32"/> </tuple>
+   <tuple> <atom label="deliveries$61"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$62"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$63"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$64"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$65"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$66"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$67"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$68"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$69"/> <atom label="product$32"/> </tuple>
+   <tuple> <atom label="deliveries$70"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$71"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$72"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$73"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$74"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$75"/> <atom label="product$32"/> </tuple>
+   <tuple> <atom label="deliveries$76"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$77"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$78"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$79"/> <atom label="product$32"/> </tuple>
+   <tuple> <atom label="deliveries$80"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$81"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$82"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$83"/> <atom label="product$32"/> </tuple>
+   <tuple> <atom label="deliveries$84"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$85"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$86"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$87"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$88"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$89"/> <atom label="product$32"/> </tuple>
+   <tuple> <atom label="deliveries$90"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$91"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$92"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$93"/> <atom label="product$28"/> </tuple>
+   <tuple> <atom label="deliveries$94"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$95"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$96"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$97"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$98"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$99"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$100"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$101"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$102"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$103"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$104"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$105"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$106"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$107"/> <atom label="product$32"/> </tuple>
+   <tuple> <atom label="deliveries$108"/> <atom label="product$11"/> </tuple>
+   <tuple> <atom label="deliveries$109"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$110"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$111"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$112"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$113"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$114"/> <atom label="product$30"/> </tuple>
+   <tuple> <atom label="deliveries$115"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$116"/> <atom label="product$33"/> </tuple>
+   <tuple> <atom label="deliveries$117"/> <atom label="product$32"/> </tuple>
+   <tuple> <atom label="deliveries$118"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="deliveries$119"/> <atom label="product$10"/> </tuple>
+   <tuple> <atom label="deliveries$120"/> <atom label="product$9"/> </tuple>
+   <tuple> <atom label="deliveries$121"/> <atom label="product$8"/> </tuple>
+   <tuple> <atom label="deliveries$122"/> <atom label="product$7"/> </tuple>
+   <tuple> <atom label="deliveries$123"/> <atom label="product$6"/> </tuple>
+   <tuple> <atom label="deliveries$124"/> <atom label="product$5"/> </tuple>
+   <tuple> <atom label="deliveries$125"/> <atom label="product$4"/> </tuple>
+   <tuple> <atom label="deliveries$126"/> <atom label="product$3"/> </tuple>
+   <tuple> <atom label="deliveries$127"/> <atom label="product$2"/> </tuple>
+   <tuple> <atom label="deliveries$128"/> <atom label="product$1"/> </tuple>
+   <tuple> <atom label="deliveries$129"/> <atom label="product$0"/> </tuple>
+   <types> <type ID="35"/> <type ID="7"/> </types>
+</field>
+
+<field label="god" ID="38" parentID="35">
+   <tuple> <atom label="deliveries$0"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$1"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="deliveries$2"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$3"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$4"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$5"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$6"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$7"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$8"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$9"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$10"/> <atom label="godown$2"/> </tuple>
+   <tuple> <atom label="deliveries$11"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$12"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$13"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$14"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$15"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$16"/> <atom label="godown$4"/> </tuple>
+   <tuple> <atom label="deliveries$17"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$18"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$19"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="deliveries$20"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$21"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$22"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="deliveries$23"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$24"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$25"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$26"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$27"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$28"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$29"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$30"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$31"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$32"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$33"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$34"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$35"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$36"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$37"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$38"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$39"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$40"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$41"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$42"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$43"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="deliveries$44"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="deliveries$45"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$46"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$47"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$48"/> <atom label="godown$3"/> </tuple>
+   <tuple> <atom label="deliveries$49"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$50"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="deliveries$51"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$52"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$53"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$54"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="deliveries$55"/> <atom label="godown$2"/> </tuple>
+   <tuple> <atom label="deliveries$56"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$57"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$58"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$59"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$60"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$61"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$62"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$63"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$64"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$65"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$66"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$67"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$68"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$69"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$70"/> <atom label="godown$3"/> </tuple>
+   <tuple> <atom label="deliveries$71"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$72"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$73"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$74"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$75"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$76"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$77"/> <atom label="godown$4"/> </tuple>
+   <tuple> <atom label="deliveries$78"/> <atom label="godown$3"/> </tuple>
+   <tuple> <atom label="deliveries$79"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$80"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$81"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$82"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$83"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$84"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$85"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$86"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$87"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$88"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$89"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$90"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$91"/> <atom label="godown$3"/> </tuple>
+   <tuple> <atom label="deliveries$92"/> <atom label="godown$4"/> </tuple>
+   <tuple> <atom label="deliveries$93"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$94"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$95"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$96"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$97"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$98"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$99"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$100"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$101"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$102"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$103"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$104"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$105"/> <atom label="godown$4"/> </tuple>
+   <tuple> <atom label="deliveries$106"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$107"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$108"/> <atom label="godown$1"/> </tuple>
+   <tuple> <atom label="deliveries$109"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$110"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$111"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$112"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$113"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$114"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$115"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$116"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$117"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$118"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$119"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$120"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$121"/> <atom label="godown$5"/> </tuple>
+   <tuple> <atom label="deliveries$122"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$123"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$124"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="deliveries$125"/> <atom label="godown$2"/> </tuple>
+   <tuple> <atom label="deliveries$126"/> <atom label="godown$3"/> </tuple>
+   <tuple> <atom label="deliveries$127"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="deliveries$128"/> <atom label="godown$1"/> </tuple>
+   <tuple> <atom label="deliveries$129"/> <atom label="godown$0"/> </tuple>
+   <types> <type ID="35"/> <type ID="10"/> </types>
+</field>
+
+<field label="couur" ID="39" parentID="35">
+   <tuple> <atom label="deliveries$0"/> <atom label="courier$10"/> </tuple>
+   <tuple> <atom label="deliveries$1"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$2"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$3"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$4"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$5"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$6"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$7"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$8"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$9"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$10"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$11"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$12"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$13"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$14"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$15"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$16"/> <atom label="courier$8"/> </tuple>
+   <tuple> <atom label="deliveries$17"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$18"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$19"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$20"/> <atom label="courier$13"/> </tuple>
+   <tuple> <atom label="deliveries$21"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$22"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$23"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$24"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$25"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$26"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$27"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$28"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$29"/> <atom label="courier$13"/> </tuple>
+   <tuple> <atom label="deliveries$30"/> <atom label="courier$12"/> </tuple>
+   <tuple> <atom label="deliveries$31"/> <atom label="courier$10"/> </tuple>
+   <tuple> <atom label="deliveries$32"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$33"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$34"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$35"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$36"/> <atom label="courier$12"/> </tuple>
+   <tuple> <atom label="deliveries$37"/> <atom label="courier$13"/> </tuple>
+   <tuple> <atom label="deliveries$38"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$39"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$40"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$41"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$42"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$43"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$44"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$45"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$46"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$47"/> <atom label="courier$13"/> </tuple>
+   <tuple> <atom label="deliveries$48"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$49"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$50"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$51"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$52"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$53"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$54"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$55"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$56"/> <atom label="courier$13"/> </tuple>
+   <tuple> <atom label="deliveries$57"/> <atom label="courier$8"/> </tuple>
+   <tuple> <atom label="deliveries$58"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$59"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$60"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$61"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$62"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$63"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$64"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$65"/> <atom label="courier$13"/> </tuple>
+   <tuple> <atom label="deliveries$66"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$67"/> <atom label="courier$9"/> </tuple>
+   <tuple> <atom label="deliveries$68"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$69"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$70"/> <atom label="courier$12"/> </tuple>
+   <tuple> <atom label="deliveries$71"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$72"/> <atom label="courier$3"/> </tuple>
+   <tuple> <atom label="deliveries$73"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$74"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$75"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$76"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$77"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$78"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$79"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$80"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$81"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$82"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$83"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$84"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$85"/> <atom label="courier$13"/> </tuple>
+   <tuple> <atom label="deliveries$86"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$87"/> <atom label="courier$1"/> </tuple>
+   <tuple> <atom label="deliveries$88"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$89"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$90"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$91"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$92"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$93"/> <atom label="courier$12"/> </tuple>
+   <tuple> <atom label="deliveries$94"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$95"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$96"/> <atom label="courier$13"/> </tuple>
+   <tuple> <atom label="deliveries$97"/> <atom label="courier$12"/> </tuple>
+   <tuple> <atom label="deliveries$98"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$99"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$100"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$101"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$102"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$103"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$104"/> <atom label="courier$13"/> </tuple>
+   <tuple> <atom label="deliveries$105"/> <atom label="courier$9"/> </tuple>
+   <tuple> <atom label="deliveries$106"/> <atom label="courier$12"/> </tuple>
+   <tuple> <atom label="deliveries$107"/> <atom label="courier$13"/> </tuple>
+   <tuple> <atom label="deliveries$108"/> <atom label="courier$10"/> </tuple>
+   <tuple> <atom label="deliveries$109"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$110"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$111"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$112"/> <atom label="courier$12"/> </tuple>
+   <tuple> <atom label="deliveries$113"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$114"/> <atom label="courier$7"/> </tuple>
+   <tuple> <atom label="deliveries$115"/> <atom label="courier$13"/> </tuple>
+   <tuple> <atom label="deliveries$116"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$117"/> <atom label="courier$11"/> </tuple>
+   <tuple> <atom label="deliveries$118"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$119"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$120"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="deliveries$121"/> <atom label="courier$12"/> </tuple>
+   <tuple> <atom label="deliveries$122"/> <atom label="courier$9"/> </tuple>
+   <tuple> <atom label="deliveries$123"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="deliveries$124"/> <atom label="courier$8"/> </tuple>
+   <tuple> <atom label="deliveries$125"/> <atom label="courier$6"/> </tuple>
+   <tuple> <atom label="deliveries$126"/> <atom label="courier$4"/> </tuple>
+   <tuple> <atom label="deliveries$127"/> <atom label="courier$5"/> </tuple>
+   <tuple> <atom label="deliveries$128"/> <atom label="courier$2"/> </tuple>
+   <tuple> <atom label="deliveries$129"/> <atom label="courier$0"/> </tuple>
+   <types> <type ID="35"/> <type ID="30"/> </types>
+</field>
+
+<field label="status" ID="40" parentID="35">
+   <tuple> <atom label="deliveries$0"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$1"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$2"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$3"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$4"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$5"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$6"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$7"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$8"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$9"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$10"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$11"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$12"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$13"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$14"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$15"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$16"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$17"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$18"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$19"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$20"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$21"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$22"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$23"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$24"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$25"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$26"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$27"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$28"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$29"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$30"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$31"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$32"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$33"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$34"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$35"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$36"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$37"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$38"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$39"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$40"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$41"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$42"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$43"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$44"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$45"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$46"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$47"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$48"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$49"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$50"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$51"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$52"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$53"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$54"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$55"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$56"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$57"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$58"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$59"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$60"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$61"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$62"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$63"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$64"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$65"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$66"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$67"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$68"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$69"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$70"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$71"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$72"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$73"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$74"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$75"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$76"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$77"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$78"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$79"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$80"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$81"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$82"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$83"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$84"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$85"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$86"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$87"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$88"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$89"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$90"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$91"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$92"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$93"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$94"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$95"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$96"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$97"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$98"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$99"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$100"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$101"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$102"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$103"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$104"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$105"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$106"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$107"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$108"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$109"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$110"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$111"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$112"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$113"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$114"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$115"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$116"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$117"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$118"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$119"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$120"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$121"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$122"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$123"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$124"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$125"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$126"/> <atom label="Picked$0"/> </tuple>
+   <tuple> <atom label="deliveries$127"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$128"/> <atom label="Delivered$0"/> </tuple>
+   <tuple> <atom label="deliveries$129"/> <atom label="Delivered$0"/> </tuple>
+   <types> <type ID="35"/> <type ID="41"/> </types>
+</field>
+
+<field label="date" ID="42" parentID="35">
+   <tuple> <atom label="deliveries$0"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$1"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$2"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$3"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$4"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$5"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$6"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$7"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$8"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$9"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$10"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="deliveries$11"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$12"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$13"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$14"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$15"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$16"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$17"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$18"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$19"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$20"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$21"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$22"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$23"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$24"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$25"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$26"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$27"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$28"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$29"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$30"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$31"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$32"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$33"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$34"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="deliveries$35"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$36"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$37"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$38"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$39"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$40"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$41"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$42"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$43"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$44"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$45"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$46"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$47"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$48"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$49"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$50"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$51"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$52"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$53"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$54"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$55"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$56"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$57"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$58"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$59"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$60"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$61"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$62"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$63"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$64"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$65"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$66"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="deliveries$67"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$68"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$69"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$70"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$71"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$72"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$73"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$74"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$75"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$76"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$77"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$78"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$79"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$80"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$81"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$82"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$83"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$84"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$85"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$86"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$87"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$88"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$89"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$90"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$91"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$92"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$93"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$94"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$95"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="deliveries$96"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$97"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$98"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$99"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$100"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$101"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$102"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$103"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$104"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$105"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$106"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$107"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$108"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$109"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$110"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$111"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$112"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$113"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$114"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$115"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$116"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="deliveries$117"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$118"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$119"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$120"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$121"/> <atom label="6"/> </tuple>
+   <tuple> <atom label="deliveries$122"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$123"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="deliveries$124"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="deliveries$125"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$126"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="deliveries$127"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$128"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="deliveries$129"/> <atom label="7"/> </tuple>
+   <types> <type ID="35"/> <type ID="1"/> </types>
+</field>
+
+<sig label="this/Picked" ID="43" parentID="41" one="yes">
+   <atom label="Picked$0"/>
+</sig>
+
+<sig label="this/Delivered" ID="44" parentID="41" one="yes">
+   <atom label="Delivered$0"/>
+</sig>
+
+<sig label="this/st" ID="41" parentID="2" abstract="yes">
+</sig>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+<skolem label="$p_o" ID="45">
+   <tuple> <atom label="customer$0"/> <atom label="order$76"/> </tuple>
+   <tuple> <atom label="customer$1"/> <atom label="order$7"/> </tuple>
+   <tuple> <atom label="customer$2"/> <atom label="order$75"/> </tuple>
+   <tuple> <atom label="customer$3"/> <atom label="order$16"/> </tuple>
+   <tuple> <atom label="customer$4"/> <atom label="order$49"/> </tuple>
+   <tuple> <atom label="customer$5"/> <atom label="order$51"/> </tuple>
+   <tuple> <atom label="customer$6"/> <atom label="order$53"/> </tuple>
+   <tuple> <atom label="customer$7"/> <atom label="order$50"/> </tuple>
+   <tuple> <atom label="customer$8"/> <atom label="order$73"/> </tuple>
+   <tuple> <atom label="customer$9"/> <atom label="order$35"/> </tuple>
+   <tuple> <atom label="customer$10"/> <atom label="order$78"/> </tuple>
+   <tuple> <atom label="customer$11"/> <atom label="order$79"/> </tuple>
+   <tuple> <atom label="customer$12"/> <atom label="order$2"/> </tuple>
+   <tuple> <atom label="customer$13"/> <atom label="order$11"/> </tuple>
+   <tuple> <atom label="customer$14"/> <atom label="order$77"/> </tuple>
+   <tuple> <atom label="customer$15"/> <atom label="order$68"/> </tuple>
+   <tuple> <atom label="customer$16"/> <atom label="order$59"/> </tuple>
+   <tuple> <atom label="customer$17"/> <atom label="order$74"/> </tuple>
+   <tuple> <atom label="customer$18"/> <atom label="order$52"/> </tuple>
+   <tuple> <atom label="customer$19"/> <atom label="order$36"/> </tuple>
+   <types> <type ID="16"/> <type ID="20"/> </types>
+</skolem>
+
+<skolem label="$p_o&apos;" ID="46">
+   <tuple> <atom label="type$0"/> <atom label="order$64"/> </tuple>
+   <tuple> <atom label="type$1"/> <atom label="order$41"/> </tuple>
+   <tuple> <atom label="type$2"/> <atom label="order$40"/> </tuple>
+   <tuple> <atom label="type$3"/> <atom label="order$20"/> </tuple>
+   <tuple> <atom label="type$4"/> <atom label="order$19"/> </tuple>
+   <tuple> <atom label="type$5"/> <atom label="order$16"/> </tuple>
+   <types> <type ID="4"/> <type ID="20"/> </types>
+</skolem>
+
+<skolem label="$p_g" ID="47">
+   <tuple> <atom label="city$0"/> <atom label="godown$4"/> </tuple>
+   <tuple> <atom label="city$1"/> <atom label="godown$7"/> </tuple>
+   <tuple> <atom label="city$2"/> <atom label="godown$2"/> </tuple>
+   <tuple> <atom label="city$3"/> <atom label="godown$6"/> </tuple>
+   <tuple> <atom label="city$4"/> <atom label="godown$3"/> </tuple>
+   <types> <type ID="13"/> <type ID="10"/> </types>
+</skolem>
+
+<skolem label="$p_cu" ID="48">
+   <tuple> <atom label="city$0"/> <atom label="customer$5"/> </tuple>
+   <tuple> <atom label="city$1"/> <atom label="customer$4"/> </tuple>
+   <tuple> <atom label="city$2"/> <atom label="customer$3"/> </tuple>
+   <tuple> <atom label="city$3"/> <atom label="customer$12"/> </tuple>
+   <tuple> <atom label="city$4"/> <atom label="customer$2"/> </tuple>
+   <types> <type ID="13"/> <type ID="16"/> </types>
+</skolem>
+
+<skolem label="$p_cou" ID="49">
+   <tuple> <atom label="city$0"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="city$1"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="city$2"/> <atom label="courier$12"/> </tuple>
+   <tuple> <atom label="city$3"/> <atom label="courier$11"/> </tuple>
+   <tuple> <atom label="city$4"/> <atom label="courier$6"/> </tuple>
+   <types> <type ID="13"/> <type ID="30"/> </types>
+</skolem>
+
+<skolem label="$p_d" ID="50">
+   <tuple> <atom label="order$0"/> <atom label="deliveries$129"/> </tuple>
+   <tuple> <atom label="order$1"/> <atom label="deliveries$128"/> </tuple>
+   <tuple> <atom label="order$2"/> <atom label="deliveries$127"/> </tuple>
+   <tuple> <atom label="order$3"/> <atom label="deliveries$126"/> </tuple>
+   <tuple> <atom label="order$4"/> <atom label="deliveries$125"/> </tuple>
+   <tuple> <atom label="order$5"/> <atom label="deliveries$124"/> </tuple>
+   <tuple> <atom label="order$6"/> <atom label="deliveries$123"/> </tuple>
+   <tuple> <atom label="order$7"/> <atom label="deliveries$122"/> </tuple>
+   <tuple> <atom label="order$8"/> <atom label="deliveries$121"/> </tuple>
+   <tuple> <atom label="order$9"/> <atom label="deliveries$120"/> </tuple>
+   <tuple> <atom label="order$10"/> <atom label="deliveries$119"/> </tuple>
+   <tuple> <atom label="order$11"/> <atom label="deliveries$118"/> </tuple>
+   <tuple> <atom label="order$12"/> <atom label="deliveries$117"/> </tuple>
+   <tuple> <atom label="order$13"/> <atom label="deliveries$116"/> </tuple>
+   <tuple> <atom label="order$14"/> <atom label="deliveries$115"/> </tuple>
+   <tuple> <atom label="order$15"/> <atom label="deliveries$114"/> </tuple>
+   <tuple> <atom label="order$16"/> <atom label="deliveries$113"/> </tuple>
+   <tuple> <atom label="order$17"/> <atom label="deliveries$112"/> </tuple>
+   <tuple> <atom label="order$18"/> <atom label="deliveries$111"/> </tuple>
+   <tuple> <atom label="order$19"/> <atom label="deliveries$110"/> </tuple>
+   <tuple> <atom label="order$20"/> <atom label="deliveries$109"/> </tuple>
+   <tuple> <atom label="order$21"/> <atom label="deliveries$108"/> </tuple>
+   <tuple> <atom label="order$22"/> <atom label="deliveries$107"/> </tuple>
+   <tuple> <atom label="order$23"/> <atom label="deliveries$106"/> </tuple>
+   <tuple> <atom label="order$24"/> <atom label="deliveries$105"/> </tuple>
+   <tuple> <atom label="order$25"/> <atom label="deliveries$104"/> </tuple>
+   <tuple> <atom label="order$26"/> <atom label="deliveries$103"/> </tuple>
+   <tuple> <atom label="order$27"/> <atom label="deliveries$102"/> </tuple>
+   <tuple> <atom label="order$28"/> <atom label="deliveries$101"/> </tuple>
+   <tuple> <atom label="order$29"/> <atom label="deliveries$100"/> </tuple>
+   <tuple> <atom label="order$30"/> <atom label="deliveries$99"/> </tuple>
+   <tuple> <atom label="order$31"/> <atom label="deliveries$98"/> </tuple>
+   <tuple> <atom label="order$32"/> <atom label="deliveries$97"/> </tuple>
+   <tuple> <atom label="order$33"/> <atom label="deliveries$96"/> </tuple>
+   <tuple> <atom label="order$34"/> <atom label="deliveries$95"/> </tuple>
+   <tuple> <atom label="order$35"/> <atom label="deliveries$94"/> </tuple>
+   <tuple> <atom label="order$36"/> <atom label="deliveries$93"/> </tuple>
+   <tuple> <atom label="order$37"/> <atom label="deliveries$92"/> </tuple>
+   <tuple> <atom label="order$38"/> <atom label="deliveries$91"/> </tuple>
+   <tuple> <atom label="order$39"/> <atom label="deliveries$90"/> </tuple>
+   <tuple> <atom label="order$40"/> <atom label="deliveries$89"/> </tuple>
+   <tuple> <atom label="order$41"/> <atom label="deliveries$88"/> </tuple>
+   <tuple> <atom label="order$42"/> <atom label="deliveries$87"/> </tuple>
+   <tuple> <atom label="order$43"/> <atom label="deliveries$86"/> </tuple>
+   <tuple> <atom label="order$44"/> <atom label="deliveries$85"/> </tuple>
+   <tuple> <atom label="order$45"/> <atom label="deliveries$84"/> </tuple>
+   <tuple> <atom label="order$46"/> <atom label="deliveries$83"/> </tuple>
+   <tuple> <atom label="order$47"/> <atom label="deliveries$82"/> </tuple>
+   <tuple> <atom label="order$48"/> <atom label="deliveries$81"/> </tuple>
+   <tuple> <atom label="order$49"/> <atom label="deliveries$80"/> </tuple>
+   <tuple> <atom label="order$50"/> <atom label="deliveries$79"/> </tuple>
+   <tuple> <atom label="order$51"/> <atom label="deliveries$78"/> </tuple>
+   <tuple> <atom label="order$52"/> <atom label="deliveries$77"/> </tuple>
+   <tuple> <atom label="order$53"/> <atom label="deliveries$76"/> </tuple>
+   <tuple> <atom label="order$54"/> <atom label="deliveries$75"/> </tuple>
+   <tuple> <atom label="order$55"/> <atom label="deliveries$74"/> </tuple>
+   <tuple> <atom label="order$56"/> <atom label="deliveries$73"/> </tuple>
+   <tuple> <atom label="order$57"/> <atom label="deliveries$72"/> </tuple>
+   <tuple> <atom label="order$58"/> <atom label="deliveries$71"/> </tuple>
+   <tuple> <atom label="order$59"/> <atom label="deliveries$70"/> </tuple>
+   <tuple> <atom label="order$60"/> <atom label="deliveries$69"/> </tuple>
+   <tuple> <atom label="order$61"/> <atom label="deliveries$68"/> </tuple>
+   <tuple> <atom label="order$62"/> <atom label="deliveries$67"/> </tuple>
+   <tuple> <atom label="order$63"/> <atom label="deliveries$66"/> </tuple>
+   <tuple> <atom label="order$64"/> <atom label="deliveries$65"/> </tuple>
+   <tuple> <atom label="order$65"/> <atom label="deliveries$64"/> </tuple>
+   <tuple> <atom label="order$66"/> <atom label="deliveries$63"/> </tuple>
+   <tuple> <atom label="order$67"/> <atom label="deliveries$62"/> </tuple>
+   <tuple> <atom label="order$68"/> <atom label="deliveries$61"/> </tuple>
+   <tuple> <atom label="order$69"/> <atom label="deliveries$60"/> </tuple>
+   <tuple> <atom label="order$70"/> <atom label="deliveries$59"/> </tuple>
+   <tuple> <atom label="order$71"/> <atom label="deliveries$58"/> </tuple>
+   <tuple> <atom label="order$72"/> <atom label="deliveries$57"/> </tuple>
+   <tuple> <atom label="order$73"/> <atom label="deliveries$56"/> </tuple>
+   <tuple> <atom label="order$74"/> <atom label="deliveries$55"/> </tuple>
+   <tuple> <atom label="order$75"/> <atom label="deliveries$54"/> </tuple>
+   <tuple> <atom label="order$76"/> <atom label="deliveries$53"/> </tuple>
+   <tuple> <atom label="order$77"/> <atom label="deliveries$52"/> </tuple>
+   <tuple> <atom label="order$78"/> <atom label="deliveries$51"/> </tuple>
+   <tuple> <atom label="order$79"/> <atom label="deliveries$50"/> </tuple>
+   <types> <type ID="20"/> <type ID="35"/> </types>
+</skolem>
+
+<skolem label="$p_d&apos;" ID="51">
+   <tuple> <atom label="product$0"/> <atom label="deliveries$129"/> </tuple>
+   <tuple> <atom label="product$1"/> <atom label="deliveries$128"/> </tuple>
+   <tuple> <atom label="product$2"/> <atom label="deliveries$127"/> </tuple>
+   <tuple> <atom label="product$3"/> <atom label="deliveries$126"/> </tuple>
+   <tuple> <atom label="product$4"/> <atom label="deliveries$125"/> </tuple>
+   <tuple> <atom label="product$5"/> <atom label="deliveries$124"/> </tuple>
+   <tuple> <atom label="product$6"/> <atom label="deliveries$123"/> </tuple>
+   <tuple> <atom label="product$7"/> <atom label="deliveries$122"/> </tuple>
+   <tuple> <atom label="product$8"/> <atom label="deliveries$121"/> </tuple>
+   <tuple> <atom label="product$9"/> <atom label="deliveries$120"/> </tuple>
+   <tuple> <atom label="product$10"/> <atom label="deliveries$119"/> </tuple>
+   <tuple> <atom label="product$11"/> <atom label="deliveries$108"/> </tuple>
+   <tuple> <atom label="product$12"/> <atom label="deliveries$26"/> </tuple>
+   <tuple> <atom label="product$13"/> <atom label="deliveries$25"/> </tuple>
+   <tuple> <atom label="product$14"/> <atom label="deliveries$24"/> </tuple>
+   <tuple> <atom label="product$15"/> <atom label="deliveries$19"/> </tuple>
+   <tuple> <atom label="product$16"/> <atom label="deliveries$18"/> </tuple>
+   <tuple> <atom label="product$17"/> <atom label="deliveries$17"/> </tuple>
+   <tuple> <atom label="product$18"/> <atom label="deliveries$16"/> </tuple>
+   <tuple> <atom label="product$19"/> <atom label="deliveries$15"/> </tuple>
+   <tuple> <atom label="product$20"/> <atom label="deliveries$14"/> </tuple>
+   <tuple> <atom label="product$21"/> <atom label="deliveries$13"/> </tuple>
+   <tuple> <atom label="product$22"/> <atom label="deliveries$12"/> </tuple>
+   <tuple> <atom label="product$23"/> <atom label="deliveries$11"/> </tuple>
+   <tuple> <atom label="product$24"/> <atom label="deliveries$10"/> </tuple>
+   <tuple> <atom label="product$25"/> <atom label="deliveries$9"/> </tuple>
+   <tuple> <atom label="product$26"/> <atom label="deliveries$8"/> </tuple>
+   <tuple> <atom label="product$27"/> <atom label="deliveries$7"/> </tuple>
+   <tuple> <atom label="product$28"/> <atom label="deliveries$6"/> </tuple>
+   <tuple> <atom label="product$29"/> <atom label="deliveries$5"/> </tuple>
+   <tuple> <atom label="product$30"/> <atom label="deliveries$4"/> </tuple>
+   <tuple> <atom label="product$31"/> <atom label="deliveries$3"/> </tuple>
+   <tuple> <atom label="product$32"/> <atom label="deliveries$2"/> </tuple>
+   <tuple> <atom label="product$33"/> <atom label="deliveries$1"/> </tuple>
+   <tuple> <atom label="product$34"/> <atom label="deliveries$0"/> </tuple>
+   <types> <type ID="7"/> <type ID="35"/> </types>
+</skolem>
+
+<skolem label="$p_d&apos;&apos;" ID="52">
+   <tuple> <atom label="godown$0"/> <atom label="deliveries$129"/> </tuple>
+   <tuple> <atom label="godown$1"/> <atom label="deliveries$128"/> </tuple>
+   <tuple> <atom label="godown$2"/> <atom label="deliveries$125"/> </tuple>
+   <tuple> <atom label="godown$3"/> <atom label="deliveries$78"/> </tuple>
+   <tuple> <atom label="godown$4"/> <atom label="deliveries$77"/> </tuple>
+   <tuple> <atom label="godown$5"/> <atom label="deliveries$54"/> </tuple>
+   <tuple> <atom label="godown$6"/> <atom label="deliveries$53"/> </tuple>
+   <tuple> <atom label="godown$7"/> <atom label="deliveries$45"/> </tuple>
+   <types> <type ID="10"/> <type ID="35"/> </types>
+</skolem>
+
+<skolem label="$p_d&apos;&apos;&apos;" ID="53">
+   <tuple> <atom label="courier$0"/> <atom label="deliveries$129"/> </tuple>
+   <tuple> <atom label="courier$1"/> <atom label="deliveries$87"/> </tuple>
+   <tuple> <atom label="courier$2"/> <atom label="deliveries$128"/> </tuple>
+   <tuple> <atom label="courier$3"/> <atom label="deliveries$72"/> </tuple>
+   <tuple> <atom label="courier$4"/> <atom label="deliveries$126"/> </tuple>
+   <tuple> <atom label="courier$5"/> <atom label="deliveries$127"/> </tuple>
+   <tuple> <atom label="courier$6"/> <atom label="deliveries$125"/> </tuple>
+   <tuple> <atom label="courier$7"/> <atom label="deliveries$114"/> </tuple>
+   <tuple> <atom label="courier$8"/> <atom label="deliveries$124"/> </tuple>
+   <tuple> <atom label="courier$9"/> <atom label="deliveries$122"/> </tuple>
+   <tuple> <atom label="courier$10"/> <atom label="deliveries$0"/> </tuple>
+   <tuple> <atom label="courier$11"/> <atom label="deliveries$117"/> </tuple>
+   <tuple> <atom label="courier$12"/> <atom label="deliveries$121"/> </tuple>
+   <tuple> <atom label="courier$13"/> <atom label="deliveries$115"/> </tuple>
+   <tuple> <atom label="courier$14"/> <atom label="deliveries$123"/> </tuple>
+   <tuple> <atom label="courier$15"/> <atom label="deliveries$120"/> </tuple>
+   <types> <type ID="30"/> <type ID="35"/> </types>
+</skolem>
+
+<skolem label="$p_cc" ID="54">
+   <tuple> <atom label="cour$0"/> <atom label="courier$15"/> </tuple>
+   <tuple> <atom label="cour$1"/> <atom label="courier$14"/> </tuple>
+   <tuple> <atom label="cour$2"/> <atom label="courier$13"/> </tuple>
+   <tuple> <atom label="cour$3"/> <atom label="courier$12"/> </tuple>
+   <tuple> <atom label="cour$4"/> <atom label="courier$11"/> </tuple>
+   <tuple> <atom label="cour$5"/> <atom label="courier$10"/> </tuple>
+   <tuple> <atom label="cour$6"/> <atom label="courier$9"/> </tuple>
+   <tuple> <atom label="cour$7"/> <atom label="courier$8"/> </tuple>
+   <tuple> <atom label="cour$8"/> <atom label="courier$7"/> </tuple>
+   <tuple> <atom label="cour$9"/> <atom label="courier$6"/> </tuple>
+   <tuple> <atom label="cour$10"/> <atom label="courier$5"/> </tuple>
+   <tuple> <atom label="cour$11"/> <atom label="courier$4"/> </tuple>
+   <tuple> <atom label="cour$12"/> <atom label="courier$3"/> </tuple>
+   <tuple> <atom label="cour$13"/> <atom label="courier$2"/> </tuple>
+   <types> <type ID="32"/> <type ID="30"/> </types>
+</skolem>
+
+<skolem label="$p_cc&apos;" ID="55">
+   <tuple> <atom label="cust$0"/> <atom label="customer$19"/> </tuple>
+   <tuple> <atom label="cust$1"/> <atom label="customer$18"/> </tuple>
+   <tuple> <atom label="cust$2"/> <atom label="customer$17"/> </tuple>
+   <tuple> <atom label="cust$3"/> <atom label="customer$16"/> </tuple>
+   <tuple> <atom label="cust$4"/> <atom label="customer$15"/> </tuple>
+   <tuple> <atom label="cust$5"/> <atom label="customer$14"/> </tuple>
+   <tuple> <atom label="cust$6"/> <atom label="customer$13"/> </tuple>
+   <tuple> <atom label="cust$7"/> <atom label="customer$12"/> </tuple>
+   <tuple> <atom label="cust$8"/> <atom label="customer$11"/> </tuple>
+   <tuple> <atom label="cust$9"/> <atom label="customer$10"/> </tuple>
+   <tuple> <atom label="cust$10"/> <atom label="customer$9"/> </tuple>
+   <tuple> <atom label="cust$11"/> <atom label="customer$8"/> </tuple>
+   <tuple> <atom label="cust$12"/> <atom label="customer$7"/> </tuple>
+   <tuple> <atom label="cust$13"/> <atom label="customer$6"/> </tuple>
+   <types> <type ID="18"/> <type ID="16"/> </types>
+</skolem>
+
+<skolem label="$p_p" ID="56">
+   <tuple> <atom label="type$0"/> <atom label="product$31"/> </tuple>
+   <tuple> <atom label="type$1"/> <atom label="product$34"/> </tuple>
+   <tuple> <atom label="type$2"/> <atom label="product$30"/> </tuple>
+   <tuple> <atom label="type$3"/> <atom label="product$28"/> </tuple>
+   <tuple> <atom label="type$4"/> <atom label="product$5"/> </tuple>
+   <tuple> <atom label="type$5"/> <atom label="product$32"/> </tuple>
+   <types> <type ID="4"/> <type ID="7"/> </types>
+</skolem>
+
+<skolem label="$p_d&apos;&apos;&apos;&apos;" ID="57">
+   <tuple> <atom label="order$0"/> <atom label="deliveries$129"/> </tuple>
+   <tuple> <atom label="order$1"/> <atom label="deliveries$128"/> </tuple>
+   <tuple> <atom label="order$2"/> <atom label="deliveries$127"/> </tuple>
+   <tuple> <atom label="order$3"/> <atom label="deliveries$126"/> </tuple>
+   <tuple> <atom label="order$4"/> <atom label="deliveries$48"/> </tuple>
+   <tuple> <atom label="order$5"/> <atom label="deliveries$124"/> </tuple>
+   <tuple> <atom label="order$6"/> <atom label="deliveries$123"/> </tuple>
+   <tuple> <atom label="order$7"/> <atom label="deliveries$47"/> </tuple>
+   <tuple> <atom label="order$8"/> <atom label="deliveries$121"/> </tuple>
+   <tuple> <atom label="order$9"/> <atom label="deliveries$120"/> </tuple>
+   <tuple> <atom label="order$10"/> <atom label="deliveries$119"/> </tuple>
+   <tuple> <atom label="order$11"/> <atom label="deliveries$49"/> </tuple>
+   <tuple> <atom label="order$12"/> <atom label="deliveries$117"/> </tuple>
+   <tuple> <atom label="order$13"/> <atom label="deliveries$116"/> </tuple>
+   <tuple> <atom label="order$14"/> <atom label="deliveries$115"/> </tuple>
+   <tuple> <atom label="order$15"/> <atom label="deliveries$114"/> </tuple>
+   <tuple> <atom label="order$16"/> <atom label="deliveries$113"/> </tuple>
+   <tuple> <atom label="order$17"/> <atom label="deliveries$112"/> </tuple>
+   <tuple> <atom label="order$18"/> <atom label="deliveries$111"/> </tuple>
+   <tuple> <atom label="order$19"/> <atom label="deliveries$110"/> </tuple>
+   <tuple> <atom label="order$20"/> <atom label="deliveries$109"/> </tuple>
+   <tuple> <atom label="order$21"/> <atom label="deliveries$41"/> </tuple>
+   <tuple> <atom label="order$22"/> <atom label="deliveries$107"/> </tuple>
+   <tuple> <atom label="order$23"/> <atom label="deliveries$106"/> </tuple>
+   <tuple> <atom label="order$24"/> <atom label="deliveries$105"/> </tuple>
+   <tuple> <atom label="order$25"/> <atom label="deliveries$104"/> </tuple>
+   <tuple> <atom label="order$26"/> <atom label="deliveries$103"/> </tuple>
+   <tuple> <atom label="order$27"/> <atom label="deliveries$102"/> </tuple>
+   <tuple> <atom label="order$28"/> <atom label="deliveries$101"/> </tuple>
+   <tuple> <atom label="order$29"/> <atom label="deliveries$100"/> </tuple>
+   <tuple> <atom label="order$30"/> <atom label="deliveries$99"/> </tuple>
+   <tuple> <atom label="order$31"/> <atom label="deliveries$98"/> </tuple>
+   <tuple> <atom label="order$32"/> <atom label="deliveries$97"/> </tuple>
+   <tuple> <atom label="order$33"/> <atom label="deliveries$96"/> </tuple>
+   <tuple> <atom label="order$34"/> <atom label="deliveries$95"/> </tuple>
+   <tuple> <atom label="order$35"/> <atom label="deliveries$94"/> </tuple>
+   <tuple> <atom label="order$36"/> <atom label="deliveries$93"/> </tuple>
+   <tuple> <atom label="order$37"/> <atom label="deliveries$92"/> </tuple>
+   <tuple> <atom label="order$38"/> <atom label="deliveries$91"/> </tuple>
+   <tuple> <atom label="order$39"/> <atom label="deliveries$90"/> </tuple>
+   <tuple> <atom label="order$40"/> <atom label="deliveries$89"/> </tuple>
+   <tuple> <atom label="order$41"/> <atom label="deliveries$88"/> </tuple>
+   <tuple> <atom label="order$42"/> <atom label="deliveries$87"/> </tuple>
+   <tuple> <atom label="order$43"/> <atom label="deliveries$86"/> </tuple>
+   <tuple> <atom label="order$44"/> <atom label="deliveries$85"/> </tuple>
+   <tuple> <atom label="order$45"/> <atom label="deliveries$84"/> </tuple>
+   <tuple> <atom label="order$46"/> <atom label="deliveries$83"/> </tuple>
+   <tuple> <atom label="order$47"/> <atom label="deliveries$82"/> </tuple>
+   <tuple> <atom label="order$48"/> <atom label="deliveries$81"/> </tuple>
+   <tuple> <atom label="order$49"/> <atom label="deliveries$80"/> </tuple>
+   <tuple> <atom label="order$50"/> <atom label="deliveries$79"/> </tuple>
+   <tuple> <atom label="order$51"/> <atom label="deliveries$78"/> </tuple>
+   <tuple> <atom label="order$52"/> <atom label="deliveries$77"/> </tuple>
+   <tuple> <atom label="order$53"/> <atom label="deliveries$76"/> </tuple>
+   <tuple> <atom label="order$54"/> <atom label="deliveries$75"/> </tuple>
+   <tuple> <atom label="order$55"/> <atom label="deliveries$74"/> </tuple>
+   <tuple> <atom label="order$56"/> <atom label="deliveries$73"/> </tuple>
+   <tuple> <atom label="order$57"/> <atom label="deliveries$72"/> </tuple>
+   <tuple> <atom label="order$58"/> <atom label="deliveries$71"/> </tuple>
+   <tuple> <atom label="order$59"/> <atom label="deliveries$70"/> </tuple>
+   <tuple> <atom label="order$60"/> <atom label="deliveries$69"/> </tuple>
+   <tuple> <atom label="order$61"/> <atom label="deliveries$68"/> </tuple>
+   <tuple> <atom label="order$62"/> <atom label="deliveries$67"/> </tuple>
+   <tuple> <atom label="order$63"/> <atom label="deliveries$66"/> </tuple>
+   <tuple> <atom label="order$64"/> <atom label="deliveries$65"/> </tuple>
+   <tuple> <atom label="order$65"/> <atom label="deliveries$64"/> </tuple>
+   <tuple> <atom label="order$66"/> <atom label="deliveries$63"/> </tuple>
+   <tuple> <atom label="order$67"/> <atom label="deliveries$62"/> </tuple>
+   <tuple> <atom label="order$68"/> <atom label="deliveries$61"/> </tuple>
+   <tuple> <atom label="order$69"/> <atom label="deliveries$60"/> </tuple>
+   <tuple> <atom label="order$70"/> <atom label="deliveries$59"/> </tuple>
+   <tuple> <atom label="order$71"/> <atom label="deliveries$46"/> </tuple>
+   <tuple> <atom label="order$72"/> <atom label="deliveries$57"/> </tuple>
+   <tuple> <atom label="order$73"/> <atom label="deliveries$56"/> </tuple>
+   <tuple> <atom label="order$74"/> <atom label="deliveries$55"/> </tuple>
+   <tuple> <atom label="order$75"/> <atom label="deliveries$35"/> </tuple>
+   <tuple> <atom label="order$76"/> <atom label="deliveries$40"/> </tuple>
+   <tuple> <atom label="order$77"/> <atom label="deliveries$52"/> </tuple>
+   <tuple> <atom label="order$78"/> <atom label="deliveries$45"/> </tuple>
+   <tuple> <atom label="order$79"/> <atom label="deliveries$50"/> </tuple>
+   <types> <type ID="20"/> <type ID="35"/> </types>
+</skolem>
+
+</instance>
+
+<source filename="/home/sahil/alloy/dbt/shopp.als" content="sig type&#x000a;{&#x000a;description :one String,&#x000a;stock:one Int&#x000a;}&#x000a;{&#x000a;stock &gt;=0&#x000a;}&#x000a;&#x000a;sig product&#x000a;{&#x000a;prodtype: one type,&#x000a;gdownid: one godown,&#x000a;avail: one Int&#x000a;}&#x000a;{&#x000a;avail=0 or avail=1&#x000a;}&#x000a;&#x000a;sig godown&#x000a;{&#x000a;loc:one city&#x000a;}&#x000a;&#x000a;sig city{info :one inf } &#x000a;&#x000a;sig inf{}&#x000a;&#x000a;sig customer&#x000a;{&#x000a;name : one cust,&#x000a;loc : one city&#x000a;}&#x000a;&#x000a;sig cust{}&#x000a;&#x000a;sig order&#x000a;{&#x000a;custt : one customer,&#x000a;prod : one type,&#x000a;quan : one Int,&#x000a;date : one Int,&#x000a;status: one stat&#x000a;}&#x000a;{&#x000a;quan&gt;0&#x000a;date&gt;0&#x000a;}&#x000a;&#x000a;fact&#x000a;{&#x000a;all c:customer| order = c.~custt =&gt; &#x000a;#order=4 and order.custt=c&#x000a;}&#x000a;&#x000a;abstract sig stat{}&#x000a;one sig ordered,shipped,delivered extends stat{}&#x000a;&#x000a;sig courier&#x000a;{&#x000a;name : one cour,&#x000a;loc : one city,&#x000a;stats: one Int&#x000a;}&#x000a;{&#x000a;stats=0 or stats=1&#x000a;}&#x000a;&#x000a;sig cour{}&#x000a;&#x000a;sig deliveries&#x000a;{&#x000a;ord:one order,&#x000a;prod:one product,&#x000a;god:one godown,&#x000a;couur:one courier,&#x000a;status:one st,&#x000a;date:one Int&#x000a;}&#x000a;{&#x000a;date&gt;0&#x000a;}&#x000a;abstract sig st{}&#x000a;one sig Picked,Delivered extends st{}&#x000a;&#x000a;fact&#x000a;{&#x000a;all c:customer|some o:order|o.custt=c&#x000a;&#x000a;all t:type|some o:order|o.prod=t&#x000a;&#x000a;all c:city|some g:godown|g.loc=c&#x000a;all c:city|some cu:customer|cu.loc=c &#x000a;all c:city|some cou:courier|cou.loc=c&#x000a;&#x000a;all o:order|some d:deliveries|&#x000a;d.ord=o&#x000a;&#x000a;all p:product|some d:deliveries|&#x000a;d.prod=p&#x000a;&#x000a;all g:godown|some d:deliveries|&#x000a;d.god=g&#x000a;&#x000a;all c:courier|some d:deliveries|&#x000a;d.couur=c&#x000a;&#x000a;all c:cour|some cc:courier|cc.name=c&#x000a;&#x000a;all c:cust|some cc:customer|cc.name=c&#x000a;&#x000a;all t:type|some p:product|p.prodtype=t&#x000a;&#x000a;all o:order|some d:deliveries|d.ord=o&#x000a;}&#x000a;&#x000a;pred p{}&#x000a;&#x000a;run p for exactly 6 type ,exactly 35 product ,exactly 8 godown ,&#x000a;exactly 5 city ,exactly 5 inf , exactly 20 customer , &#x000a;exactly 14 cust , exactly 16 courier ,exactly 80 order ,&#x000a;exactly 130 deliveries, exactly 8 String , 4 Int&#x000a;,exactly 14 cour&#x000a;"/>
+
+<source filename="/$alloy4$/models/util/integer.als" content="module util/integer&#x000a;&#x000a;/*&#x000a; * A collection of utility functions for using Integers in Alloy.&#x000a; * Note that integer overflows are silently truncated to the current bitwidth&#x000a; * using the 2&apos;s complement arithmetic, unless the &quot;forbid overfows&quot; option is&#x000a; * turned on, in which case only models that don&apos;t have any overflows are &#x000a; * analyzed. &#x000a; */&#x000a;&#x000a;fun add  [n1, n2: Int] : Int { this/plus[n1, n2] }&#x000a;fun plus [n1, n2: Int] : Int { n1 fun/add n2 }&#x000a;&#x000a;fun sub   [n1, n2: Int] : Int { this/minus[n1, n2] }&#x000a;fun minus [n1, n2: Int] : Int { n1 fun/sub n2 }&#x000a;&#x000a;fun mul [n1, n2: Int] : Int { n1 fun/mul n2 }&#x000a;&#x000a;/**&#x000a; * Performs the division with &quot;round to zero&quot; semantics, except the following 3 cases&#x000a; * 1) if a is 0, then it returns 0&#x000a; * 2) else if b is 0, then it returns 1 if a is negative and -1 if a is positive&#x000a; * 3) else if a is the smallest negative integer, and b is -1, then it returns a&#x000a; */&#x000a;fun div [n1, n2: Int] : Int { n1 fun/div n2 }&#x000a;&#x000a;/** answer is defined to be the unique integer that satisfies &quot;a = ((a/b)*b) + remainder&quot; */&#x000a;fun rem [n1, n2: Int] : Int { n1 fun/rem n2 }&#x000a;&#x000a;/** negate */&#x000a;fun negate [n: Int] : Int { 0 fun/sub n }&#x000a;&#x000a;/** equal to */&#x000a;pred eq [n1, n2: Int] { int[n1] = int[n2] }&#x000a;&#x000a;/** greater than */&#x000a;pred gt [n1, n2: Int] { n1 &gt; n2 }&#x000a;&#x000a;/** less then */&#x000a;pred lt [n1, n2: Int] { n1 &lt; n2 }&#x000a;&#x000a;/** greater than or equal */&#x000a;pred gte [n1, n2: Int] { n1 &gt;= n2 }&#x000a;&#x000a;/** less than or equal */&#x000a;pred lte [n1, n2: Int] { n1 &lt;= n2 }&#x000a;&#x000a;/** integer is zero */&#x000a;pred zero [n: Int] { n = 0 }&#x000a;&#x000a;/** positive */&#x000a;pred pos  [n: Int] { n &gt; 0 }&#x000a;&#x000a;/** negative */&#x000a;pred neg  [n: Int] { n &lt; 0 }&#x000a;&#x000a;/** non-positive */&#x000a;pred nonpos [n: Int] { n &lt;= 0 }&#x000a;&#x000a;/** non-negative */&#x000a;pred nonneg [n: Int] { n &gt;= 0 }&#x000a;&#x000a;/** signum (aka sign or sgn) */&#x000a;fun signum [n: Int] : Int { n&lt;0 =&gt; (0 fun/sub 1) else (n&gt;0 =&gt; 1 else 0) }&#x000a;&#x000a;/**&#x000a; * returns the ith element (zero-based) from the set s&#x000a; * in the ordering of &apos;next&apos;, which is a linear ordering&#x000a; * relation like that provided by util/ordering&#x000a; */&#x000a;fun int2elem[i: Int, next: univ-&gt;univ, s: set univ] : lone s {&#x000a;  {e: s | #^next.e = int i }&#x000a;}&#x000a;&#x000a;/**&#x000a; * returns the index of the element (zero-based) in the&#x000a; * ordering of next, which is a linear ordering relation&#x000a; * like that provided by util/ordering&#x000a; */&#x000a;fun elem2int[e: univ, next: univ-&gt;univ] : lone Int {&#x000a;  Int[#^next.e]&#x000a;}&#x000a;&#x000a;/** returns the largest integer in the current bitwidth */&#x000a;fun max:one Int { fun/max }&#x000a;&#x000a;/** returns the smallest integer in the current bitwidth */&#x000a;fun min:one Int { fun/min }&#x000a;&#x000a;/** maps each integer (except max) to the integer after it */&#x000a;fun next:Int-&gt;Int { fun/next }&#x000a;&#x000a;/** maps each integer (except min) to the integer before it */&#x000a;fun prev:Int-&gt;Int { ~next }&#x000a;&#x000a;/** given a set of integers, return the largest element */&#x000a;fun max [es: set Int]: lone Int { es - es.^prev }&#x000a;&#x000a;/** given a set of integers, return the smallest element */&#x000a;fun min [es: set Int]: lone Int { es - es.^next }&#x000a;&#x000a;/** given an integer, return all integers prior to it */&#x000a;fun prevs [e: Int]: set Int { e.^prev }&#x000a;&#x000a;/** given an integer, return all integers following it */&#x000a;fun nexts [e: Int]: set Int { e.^next }&#x000a;&#x000a;/** returns the larger of the two integers */&#x000a;fun larger [e1, e2: Int]: Int { let a=int[e1], b=int[e2] | (a&lt;b =&gt; b else a) }&#x000a;&#x000a;/** returns the smaller of the two integers */&#x000a;fun smaller [e1, e2: Int]: Int { let a=int[e1], b=int[e2] | (a&lt;b =&gt; a else b) }&#x000a;"/>
+
+</alloy>

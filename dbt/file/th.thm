@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view>
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="Int"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="seq/Int"/>
+</node>
+
+<node shape="Circle" color="Green">
+   <type name="godown"/>
+</node>
+
+<node shape="Diamond" color="Red">
+   <type name="prod"/>
+</node>
+
+<node shape="Ellipse" color="Blue">
+   <type name="type"/>
+</node>
+
+<node shape="Triangle" color="Black">
+   <type name="city"/>
+</node>
+
+</view>
+
+</alloy>

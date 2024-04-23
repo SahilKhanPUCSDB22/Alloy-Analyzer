@@ -1,0 +1,456 @@
+<alloy builddate="2023-06-22T06:38:33.475Z">
+
+<instance bitwidth="5" maxseq="4" mintrace="-1" maxtrace="-1" command="Run run$2 for 5 int, exactly 2 stream, exactly 5 batches, exactly 10 student, exactly 7 courses, exactly 12 streamcourse, exactly 15 courselist, exactly 20 stucoureg, exactly 7 coursename" filename="/home/sahil/alloy/PUCSD/PUCSDfile.als" tracelength="1" backloop="0">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/stream" ID="4" parentID="2">
+   <atom label="stream$0"/>
+   <atom label="stream$1"/>
+</sig>
+
+<field label="have" ID="5" parentID="4">
+   <tuple> <atom label="stream$0"/> <atom label="msc$0"/> </tuple>
+   <tuple> <atom label="stream$1"/> <atom label="mca$0"/> </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+</field>
+
+<sig label="this/mca" ID="7" parentID="6" one="yes">
+   <atom label="mca$0"/>
+</sig>
+
+<sig label="this/msc" ID="8" parentID="6" one="yes">
+   <atom label="msc$0"/>
+</sig>
+
+<sig label="this/degree" ID="6" parentID="2" abstract="yes">
+</sig>
+
+<sig label="this/batches" ID="9" parentID="2">
+   <atom label="batches$0"/>
+   <atom label="batches$1"/>
+   <atom label="batches$2"/>
+   <atom label="batches$3"/>
+   <atom label="batches$4"/>
+</sig>
+
+<field label="bno" ID="10" parentID="9">
+   <tuple> <atom label="batches$0"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="batches$1"/> <atom label="13"/> </tuple>
+   <tuple> <atom label="batches$2"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="batches$3"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="batches$4"/> <atom label="1"/> </tuple>
+   <types> <type ID="9"/> <type ID="1"/> </types>
+</field>
+
+<sig label="this/student" ID="11" parentID="2">
+   <atom label="student$0"/>
+   <atom label="student$1"/>
+   <atom label="student$2"/>
+   <atom label="student$3"/>
+   <atom label="student$4"/>
+   <atom label="student$5"/>
+   <atom label="student$6"/>
+   <atom label="student$7"/>
+   <atom label="student$8"/>
+   <atom label="student$9"/>
+</sig>
+
+<field label="rollno" ID="12" parentID="11">
+   <tuple> <atom label="student$0"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="student$1"/> <atom label="13"/> </tuple>
+   <tuple> <atom label="student$2"/> <atom label="12"/> </tuple>
+   <tuple> <atom label="student$3"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="student$4"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="student$5"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="student$6"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="student$7"/> <atom label="10"/> </tuple>
+   <tuple> <atom label="student$8"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="student$9"/> <atom label="2"/> </tuple>
+   <types> <type ID="11"/> <type ID="1"/> </types>
+</field>
+
+<field label="batch" ID="13" parentID="11">
+   <tuple> <atom label="student$0"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="student$1"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="student$2"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="student$3"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="student$4"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="student$5"/> <atom label="13"/> </tuple>
+   <tuple> <atom label="student$6"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="student$7"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="student$8"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="student$9"/> <atom label="1"/> </tuple>
+   <types> <type ID="11"/> <type ID="1"/> </types>
+</field>
+
+<field label="stream" ID="14" parentID="11">
+   <tuple> <atom label="student$0"/> <atom label="mca$0"/> </tuple>
+   <tuple> <atom label="student$1"/> <atom label="mca$0"/> </tuple>
+   <tuple> <atom label="student$2"/> <atom label="mca$0"/> </tuple>
+   <tuple> <atom label="student$3"/> <atom label="mca$0"/> </tuple>
+   <tuple> <atom label="student$4"/> <atom label="msc$0"/> </tuple>
+   <tuple> <atom label="student$5"/> <atom label="mca$0"/> </tuple>
+   <tuple> <atom label="student$6"/> <atom label="msc$0"/> </tuple>
+   <tuple> <atom label="student$7"/> <atom label="msc$0"/> </tuple>
+   <tuple> <atom label="student$8"/> <atom label="msc$0"/> </tuple>
+   <tuple> <atom label="student$9"/> <atom label="msc$0"/> </tuple>
+   <types> <type ID="11"/> <type ID="6"/> </types>
+</field>
+
+<sig label="this/courses" ID="15" parentID="2">
+   <atom label="courses$0"/>
+   <atom label="courses$1"/>
+   <atom label="courses$2"/>
+   <atom label="courses$3"/>
+   <atom label="courses$4"/>
+   <atom label="courses$5"/>
+   <atom label="courses$6"/>
+</sig>
+
+<field label="cno" ID="16" parentID="15">
+   <tuple> <atom label="courses$0"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="courses$1"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="courses$2"/> <atom label="13"/> </tuple>
+   <tuple> <atom label="courses$3"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="courses$4"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="courses$5"/> <atom label="10"/> </tuple>
+   <tuple> <atom label="courses$6"/> <atom label="12"/> </tuple>
+   <types> <type ID="15"/> <type ID="1"/> </types>
+</field>
+
+<field label="cname" ID="17" parentID="15">
+   <tuple> <atom label="courses$0"/> <atom label="coursename$6"/> </tuple>
+   <tuple> <atom label="courses$1"/> <atom label="coursename$5"/> </tuple>
+   <tuple> <atom label="courses$2"/> <atom label="coursename$4"/> </tuple>
+   <tuple> <atom label="courses$3"/> <atom label="coursename$3"/> </tuple>
+   <tuple> <atom label="courses$4"/> <atom label="coursename$2"/> </tuple>
+   <tuple> <atom label="courses$5"/> <atom label="coursename$1"/> </tuple>
+   <tuple> <atom label="courses$6"/> <atom label="coursename$0"/> </tuple>
+   <types> <type ID="15"/> <type ID="18"/> </types>
+</field>
+
+<sig label="this/coursename" ID="18" parentID="2">
+   <atom label="coursename$0"/>
+   <atom label="coursename$1"/>
+   <atom label="coursename$2"/>
+   <atom label="coursename$3"/>
+   <atom label="coursename$4"/>
+   <atom label="coursename$5"/>
+   <atom label="coursename$6"/>
+</sig>
+
+<sig label="this/streamcourse" ID="19" parentID="2">
+   <atom label="streamcourse$0"/>
+   <atom label="streamcourse$1"/>
+   <atom label="streamcourse$2"/>
+   <atom label="streamcourse$3"/>
+   <atom label="streamcourse$4"/>
+   <atom label="streamcourse$5"/>
+   <atom label="streamcourse$6"/>
+   <atom label="streamcourse$7"/>
+   <atom label="streamcourse$8"/>
+   <atom label="streamcourse$9"/>
+   <atom label="streamcourse$10"/>
+   <atom label="streamcourse$11"/>
+</sig>
+
+<field label="ccode" ID="20" parentID="19">
+   <tuple> <atom label="streamcourse$0"/> <atom label="10"/> </tuple>
+   <tuple> <atom label="streamcourse$1"/> <atom label="10"/> </tuple>
+   <tuple> <atom label="streamcourse$2"/> <atom label="12"/> </tuple>
+   <tuple> <atom label="streamcourse$3"/> <atom label="12"/> </tuple>
+   <tuple> <atom label="streamcourse$4"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="streamcourse$5"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="streamcourse$6"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="streamcourse$7"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="streamcourse$8"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="streamcourse$9"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="streamcourse$10"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="streamcourse$11"/> <atom label="5"/> </tuple>
+   <types> <type ID="19"/> <type ID="1"/> </types>
+</field>
+
+<field label="str" ID="21" parentID="19">
+   <tuple> <atom label="streamcourse$0"/> <atom label="mca$0"/> </tuple>
+   <tuple> <atom label="streamcourse$1"/> <atom label="msc$0"/> </tuple>
+   <tuple> <atom label="streamcourse$2"/> <atom label="msc$0"/> </tuple>
+   <tuple> <atom label="streamcourse$3"/> <atom label="mca$0"/> </tuple>
+   <tuple> <atom label="streamcourse$4"/> <atom label="mca$0"/> </tuple>
+   <tuple> <atom label="streamcourse$5"/> <atom label="msc$0"/> </tuple>
+   <tuple> <atom label="streamcourse$6"/> <atom label="msc$0"/> </tuple>
+   <tuple> <atom label="streamcourse$7"/> <atom label="msc$0"/> </tuple>
+   <tuple> <atom label="streamcourse$8"/> <atom label="mca$0"/> </tuple>
+   <tuple> <atom label="streamcourse$9"/> <atom label="mca$0"/> </tuple>
+   <tuple> <atom label="streamcourse$10"/> <atom label="msc$0"/> </tuple>
+   <tuple> <atom label="streamcourse$11"/> <atom label="mca$0"/> </tuple>
+   <types> <type ID="19"/> <type ID="6"/> </types>
+</field>
+
+<field label="sem" ID="22" parentID="19">
+   <tuple> <atom label="streamcourse$0"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="streamcourse$1"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="streamcourse$2"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="streamcourse$3"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="streamcourse$4"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="streamcourse$5"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="streamcourse$6"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="streamcourse$7"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="streamcourse$8"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="streamcourse$9"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="streamcourse$10"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="streamcourse$11"/> <atom label="3"/> </tuple>
+   <types> <type ID="19"/> <type ID="1"/> </types>
+</field>
+
+<sig label="this/courselist" ID="23" parentID="2">
+   <atom label="courselist$0"/>
+   <atom label="courselist$1"/>
+   <atom label="courselist$2"/>
+   <atom label="courselist$3"/>
+   <atom label="courselist$4"/>
+   <atom label="courselist$5"/>
+   <atom label="courselist$6"/>
+   <atom label="courselist$7"/>
+   <atom label="courselist$8"/>
+   <atom label="courselist$9"/>
+   <atom label="courselist$10"/>
+   <atom label="courselist$11"/>
+   <atom label="courselist$12"/>
+   <atom label="courselist$13"/>
+   <atom label="courselist$14"/>
+</sig>
+
+<field label="ccode" ID="24" parentID="23">
+   <tuple> <atom label="courselist$0"/> <atom label="11"/> </tuple>
+   <tuple> <atom label="courselist$1"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="courselist$2"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="courselist$3"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="courselist$4"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="courselist$5"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="courselist$6"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="courselist$7"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="courselist$8"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="courselist$9"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="courselist$10"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="courselist$11"/> <atom label="8"/> </tuple>
+   <tuple> <atom label="courselist$12"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="courselist$13"/> <atom label="12"/> </tuple>
+   <tuple> <atom label="courselist$14"/> <atom label="10"/> </tuple>
+   <types> <type ID="23"/> <type ID="1"/> </types>
+</field>
+
+<field label="sem" ID="25" parentID="23">
+   <tuple> <atom label="courselist$0"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="courselist$1"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="courselist$2"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="courselist$3"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="courselist$4"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="courselist$5"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="courselist$6"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="courselist$7"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="courselist$8"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="courselist$9"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="courselist$10"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="courselist$11"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="courselist$12"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="courselist$13"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="courselist$14"/> <atom label="4"/> </tuple>
+   <types> <type ID="23"/> <type ID="1"/> </types>
+</field>
+
+<field label="year" ID="26" parentID="23">
+   <tuple> <atom label="courselist$0"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="courselist$1"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="courselist$2"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="courselist$3"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="courselist$4"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="courselist$5"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="courselist$6"/> <atom label="13"/> </tuple>
+   <tuple> <atom label="courselist$7"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="courselist$8"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="courselist$9"/> <atom label="13"/> </tuple>
+   <tuple> <atom label="courselist$10"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="courselist$11"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="courselist$12"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="courselist$13"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="courselist$14"/> <atom label="15"/> </tuple>
+   <types> <type ID="23"/> <type ID="1"/> </types>
+</field>
+
+<sig label="this/stucoureg" ID="27" parentID="2">
+   <atom label="stucoureg$0"/>
+   <atom label="stucoureg$1"/>
+   <atom label="stucoureg$2"/>
+   <atom label="stucoureg$3"/>
+   <atom label="stucoureg$4"/>
+   <atom label="stucoureg$5"/>
+   <atom label="stucoureg$6"/>
+   <atom label="stucoureg$7"/>
+   <atom label="stucoureg$8"/>
+   <atom label="stucoureg$9"/>
+   <atom label="stucoureg$10"/>
+   <atom label="stucoureg$11"/>
+   <atom label="stucoureg$12"/>
+   <atom label="stucoureg$13"/>
+   <atom label="stucoureg$14"/>
+   <atom label="stucoureg$15"/>
+   <atom label="stucoureg$16"/>
+   <atom label="stucoureg$17"/>
+   <atom label="stucoureg$18"/>
+   <atom label="stucoureg$19"/>
+</sig>
+
+<field label="rno" ID="28" parentID="27">
+   <tuple> <atom label="stucoureg$0"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="stucoureg$1"/> <atom label="13"/> </tuple>
+   <tuple> <atom label="stucoureg$2"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="stucoureg$3"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="stucoureg$4"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="stucoureg$5"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="stucoureg$6"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="stucoureg$7"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="stucoureg$8"/> <atom label="12"/> </tuple>
+   <tuple> <atom label="stucoureg$9"/> <atom label="12"/> </tuple>
+   <tuple> <atom label="stucoureg$10"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="stucoureg$11"/> <atom label="13"/> </tuple>
+   <tuple> <atom label="stucoureg$12"/> <atom label="12"/> </tuple>
+   <tuple> <atom label="stucoureg$13"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="stucoureg$14"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="stucoureg$15"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="stucoureg$16"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="stucoureg$17"/> <atom label="12"/> </tuple>
+   <tuple> <atom label="stucoureg$18"/> <atom label="13"/> </tuple>
+   <tuple> <atom label="stucoureg$19"/> <atom label="12"/> </tuple>
+   <types> <type ID="27"/> <type ID="1"/> </types>
+</field>
+
+<field label="cno" ID="29" parentID="27">
+   <tuple> <atom label="stucoureg$0"/> <atom label="10"/> </tuple>
+   <tuple> <atom label="stucoureg$1"/> <atom label="12"/> </tuple>
+   <tuple> <atom label="stucoureg$2"/> <atom label="12"/> </tuple>
+   <tuple> <atom label="stucoureg$3"/> <atom label="12"/> </tuple>
+   <tuple> <atom label="stucoureg$4"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="stucoureg$5"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="stucoureg$6"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="stucoureg$7"/> <atom label="8"/> </tuple>
+   <tuple> <atom label="stucoureg$8"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="stucoureg$9"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="stucoureg$10"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="stucoureg$11"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="stucoureg$12"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="stucoureg$13"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="stucoureg$14"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="stucoureg$15"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="stucoureg$16"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="stucoureg$17"/> <atom label="14"/> </tuple>
+   <tuple> <atom label="stucoureg$18"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="stucoureg$19"/> <atom label="15"/> </tuple>
+   <types> <type ID="27"/> <type ID="1"/> </types>
+</field>
+
+<field label="yr" ID="30" parentID="27">
+   <tuple> <atom label="stucoureg$0"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="stucoureg$1"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="stucoureg$2"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="stucoureg$3"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="stucoureg$4"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="stucoureg$5"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="stucoureg$6"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="stucoureg$7"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="stucoureg$8"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="stucoureg$9"/> <atom label="13"/> </tuple>
+   <tuple> <atom label="stucoureg$10"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="stucoureg$11"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="stucoureg$12"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="stucoureg$13"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="stucoureg$14"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="stucoureg$15"/> <atom label="13"/> </tuple>
+   <tuple> <atom label="stucoureg$16"/> <atom label="15"/> </tuple>
+   <tuple> <atom label="stucoureg$17"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="stucoureg$18"/> <atom label="9"/> </tuple>
+   <tuple> <atom label="stucoureg$19"/> <atom label="4"/> </tuple>
+   <types> <type ID="27"/> <type ID="1"/> </types>
+</field>
+
+<field label="sem" ID="31" parentID="27">
+   <tuple> <atom label="stucoureg$0"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="stucoureg$1"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="stucoureg$2"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="stucoureg$3"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="stucoureg$4"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="stucoureg$5"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="stucoureg$6"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="stucoureg$7"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="stucoureg$8"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="stucoureg$9"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="stucoureg$10"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="stucoureg$11"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="stucoureg$12"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="stucoureg$13"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="stucoureg$14"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="stucoureg$15"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="stucoureg$16"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="stucoureg$17"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="stucoureg$18"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="stucoureg$19"/> <atom label="1"/> </tuple>
+   <types> <type ID="27"/> <type ID="1"/> </types>
+</field>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+<skolem label="$c" ID="32">
+   <tuple> <atom label="stucoureg$0"/> <atom label="courselist$14"/> </tuple>
+   <tuple> <atom label="stucoureg$1"/> <atom label="courselist$13"/> </tuple>
+   <tuple> <atom label="stucoureg$2"/> <atom label="courselist$13"/> </tuple>
+   <tuple> <atom label="stucoureg$3"/> <atom label="courselist$13"/> </tuple>
+   <tuple> <atom label="stucoureg$4"/> <atom label="courselist$12"/> </tuple>
+   <tuple> <atom label="stucoureg$5"/> <atom label="courselist$12"/> </tuple>
+   <tuple> <atom label="stucoureg$6"/> <atom label="courselist$12"/> </tuple>
+   <tuple> <atom label="stucoureg$7"/> <atom label="courselist$11"/> </tuple>
+   <tuple> <atom label="stucoureg$8"/> <atom label="courselist$10"/> </tuple>
+   <tuple> <atom label="stucoureg$9"/> <atom label="courselist$9"/> </tuple>
+   <tuple> <atom label="stucoureg$10"/> <atom label="courselist$8"/> </tuple>
+   <tuple> <atom label="stucoureg$11"/> <atom label="courselist$8"/> </tuple>
+   <tuple> <atom label="stucoureg$12"/> <atom label="courselist$8"/> </tuple>
+   <tuple> <atom label="stucoureg$13"/> <atom label="courselist$8"/> </tuple>
+   <tuple> <atom label="stucoureg$14"/> <atom label="courselist$7"/> </tuple>
+   <tuple> <atom label="stucoureg$15"/> <atom label="courselist$6"/> </tuple>
+   <tuple> <atom label="stucoureg$16"/> <atom label="courselist$5"/> </tuple>
+   <tuple> <atom label="stucoureg$17"/> <atom label="courselist$4"/> </tuple>
+   <tuple> <atom label="stucoureg$18"/> <atom label="courselist$3"/> </tuple>
+   <tuple> <atom label="stucoureg$19"/> <atom label="courselist$2"/> </tuple>
+   <types> <type ID="27"/> <type ID="23"/> </types>
+</skolem>
+
+<skolem label="$c&apos;" ID="33">
+   <tuple> <atom label="streamcourse$0"/> <atom label="courselist$14"/> </tuple>
+   <tuple> <atom label="streamcourse$1"/> <atom label="courselist$14"/> </tuple>
+   <tuple> <atom label="streamcourse$2"/> <atom label="courselist$13"/> </tuple>
+   <tuple> <atom label="streamcourse$3"/> <atom label="courselist$13"/> </tuple>
+   <tuple> <atom label="streamcourse$4"/> <atom label="courselist$12"/> </tuple>
+   <tuple> <atom label="streamcourse$5"/> <atom label="courselist$12"/> </tuple>
+   <tuple> <atom label="streamcourse$6"/> <atom label="courselist$10"/> </tuple>
+   <tuple> <atom label="streamcourse$7"/> <atom label="courselist$7"/> </tuple>
+   <tuple> <atom label="streamcourse$8"/> <atom label="courselist$6"/> </tuple>
+   <tuple> <atom label="streamcourse$9"/> <atom label="courselist$5"/> </tuple>
+   <tuple> <atom label="streamcourse$10"/> <atom label="courselist$5"/> </tuple>
+   <tuple> <atom label="streamcourse$11"/> <atom label="courselist$3"/> </tuple>
+   <types> <type ID="19"/> <type ID="23"/> </types>
+</skolem>
+
+</instance>
+
+<source filename="/home/sahil/alloy/PUCSD/PUCSDfile.als" content="sig stream {&#x000a;have : disj one degree}&#x000a;abstract sig degree{}&#x000a;one sig mca ,msc extends degree{}&#x000a;&#x000a;sig batches{&#x000a;bno : disj one Int&#x000a;}&#x000a;{&#x000a;bno&gt;-1&#x000a;}&#x000a;&#x000a;sig student{&#x000a;rollno: one Int,&#x000a;batch: one Int,&#x000a;stream: one degree&#x000a;}&#x000a;{&#x000a;rollno&gt;0&#x000a;}&#x000a;&#x000a;sig courses{&#x000a;cno :disj one Int,&#x000a;cname: disj one coursename&#x000a;}&#x000a;{&#x000a;cno&gt;0&#x000a;}&#x000a;&#x000a;sig coursename{}&#x000a;&#x000a;sig streamcourse{&#x000a;ccode:one Int,&#x000a;str:one degree,&#x000a;sem : one Int&#x000a;}&#x000a;{&#x000a;sem &gt;0  and sem &lt;5&#x000a;}&#x000a;&#x000a;sig courselist {&#x000a;ccode: one Int,&#x000a;sem : one Int,&#x000a;year : one Int&#x000a;}&#x000a;{&#x000a;ccode&gt;0&#x000a;sem &gt;0 and sem &lt;5&#x000a;}&#x000a;&#x000a;sig stucoureg{&#x000a;rno: one Int,&#x000a;cno:one Int,&#x000a;yr: one Int,&#x000a;sem: one Int&#x000a;}&#x000a;{&#x000a;rno&gt;0&#x000a;yr&gt;0&#x000a;sem&gt;0 and sem &lt;5}&#x000a;&#x000a;fact&#x000a;{&#x000a;no disj s1,s2:stucoureg|s1.rno=s2.rno and&#x000a;s1.yr=s2.yr and s1.sem=s2.sem and s1.cno=s1.cno&#x000a;&#x000a;//no s:stucoureg|some st:student|s.rno!=st.rollno and&#x000a;//s.yr!=st.batch&#x000a;&#x000a;all s:stucoureg|let y=student.batch| &#x000a;let r=student.rollno|s.rno in r and s.yr in y&#x000a;&#x000a;all s:stucoureg|let c=courselist.ccode| &#x000a;let y=courselist.year|s.cno in c and s.yr in y&#x000a;&#x000a;//some s:student|all st:stucoureg|&#x000a;//st.rno=s.rollno and st.yr=s.batch&#x000a;&#x000a;all s:stucoureg|some c:courselist|s.yr=c.year and&#x000a;s.sem=c.sem and s.cno=c.ccode&#x000a;&#x000a;all s:student|let i=batches.bno|s.batch in i&#x000a;&#x000a;no disj s1,s2:student|s1.rollno=s2.rollno and&#x000a;s1.batch=s2.batch and s1.stream=s2.stream&#x000a;&#x000a;all s:streamcourse|let c=courses.cno|s.ccode in c&#x000a;&#x000a;no disj s1,s2:streamcourse|s1.ccode=s2.ccode and&#x000a;s1.str=s2.str &#x000a;&#x000a;all s:streamcourse|some c:courselist|&#x000a;c.ccode=s.ccode and s.sem=c.sem&#x000a;&#x000a;no disj c1,c2:courselist|c1.ccode=c2.ccode and&#x000a;c1.sem=c2.sem and c1.year=c2.year&#x000a;&#x000a;all c:courselist|let x=batches.bno| c.year in x&#x000a;}&#x000a;&#x000a;check&#x000a;{&#x000a;no s:student|all i:batches.bno|s.batch not in i&#x000a;}&#x000a;&#x000a;run {} for exactly 2 stream,exactly 5 batches , &#x000a;exactly 10 student,exactly 7 courses, &#x000a;exactly 12 streamcourse,exactly 15 courselist,&#x000a;exactly 20 stucoureg,exactly 7 coursename,5 int&#x000a;"/>
+
+<source filename="/$alloy4$/models/util/integer.als" content="module util/integer&#x000a;&#x000a;/*&#x000a; * A collection of utility functions for using Integers in Alloy.&#x000a; * Note that integer overflows are silently truncated to the current bitwidth&#x000a; * using the 2&apos;s complement arithmetic, unless the &quot;forbid overfows&quot; option is&#x000a; * turned on, in which case only models that don&apos;t have any overflows are &#x000a; * analyzed. &#x000a; */&#x000a;&#x000a;fun add  [n1, n2: Int] : Int { this/plus[n1, n2] }&#x000a;fun plus [n1, n2: Int] : Int { n1 fun/add n2 }&#x000a;&#x000a;fun sub   [n1, n2: Int] : Int { this/minus[n1, n2] }&#x000a;fun minus [n1, n2: Int] : Int { n1 fun/sub n2 }&#x000a;&#x000a;fun mul [n1, n2: Int] : Int { n1 fun/mul n2 }&#x000a;&#x000a;/**&#x000a; * Performs the division with &quot;round to zero&quot; semantics, except the following 3 cases&#x000a; * 1) if a is 0, then it returns 0&#x000a; * 2) else if b is 0, then it returns 1 if a is negative and -1 if a is positive&#x000a; * 3) else if a is the smallest negative integer, and b is -1, then it returns a&#x000a; */&#x000a;fun div [n1, n2: Int] : Int { n1 fun/div n2 }&#x000a;&#x000a;/** answer is defined to be the unique integer that satisfies &quot;a = ((a/b)*b) + remainder&quot; */&#x000a;fun rem [n1, n2: Int] : Int { n1 fun/rem n2 }&#x000a;&#x000a;/** negate */&#x000a;fun negate [n: Int] : Int { 0 fun/sub n }&#x000a;&#x000a;/** equal to */&#x000a;pred eq [n1, n2: Int] { int[n1] = int[n2] }&#x000a;&#x000a;/** greater than */&#x000a;pred gt [n1, n2: Int] { n1 &gt; n2 }&#x000a;&#x000a;/** less then */&#x000a;pred lt [n1, n2: Int] { n1 &lt; n2 }&#x000a;&#x000a;/** greater than or equal */&#x000a;pred gte [n1, n2: Int] { n1 &gt;= n2 }&#x000a;&#x000a;/** less than or equal */&#x000a;pred lte [n1, n2: Int] { n1 &lt;= n2 }&#x000a;&#x000a;/** integer is zero */&#x000a;pred zero [n: Int] { n = 0 }&#x000a;&#x000a;/** positive */&#x000a;pred pos  [n: Int] { n &gt; 0 }&#x000a;&#x000a;/** negative */&#x000a;pred neg  [n: Int] { n &lt; 0 }&#x000a;&#x000a;/** non-positive */&#x000a;pred nonpos [n: Int] { n &lt;= 0 }&#x000a;&#x000a;/** non-negative */&#x000a;pred nonneg [n: Int] { n &gt;= 0 }&#x000a;&#x000a;/** signum (aka sign or sgn) */&#x000a;fun signum [n: Int] : Int { n&lt;0 =&gt; (0 fun/sub 1) else (n&gt;0 =&gt; 1 else 0) }&#x000a;&#x000a;/**&#x000a; * returns the ith element (zero-based) from the set s&#x000a; * in the ordering of &apos;next&apos;, which is a linear ordering&#x000a; * relation like that provided by util/ordering&#x000a; */&#x000a;fun int2elem[i: Int, next: univ-&gt;univ, s: set univ] : lone s {&#x000a;  {e: s | #^next.e = int i }&#x000a;}&#x000a;&#x000a;/**&#x000a; * returns the index of the element (zero-based) in the&#x000a; * ordering of next, which is a linear ordering relation&#x000a; * like that provided by util/ordering&#x000a; */&#x000a;fun elem2int[e: univ, next: univ-&gt;univ] : lone Int {&#x000a;  Int[#^next.e]&#x000a;}&#x000a;&#x000a;/** returns the largest integer in the current bitwidth */&#x000a;fun max:one Int { fun/max }&#x000a;&#x000a;/** returns the smallest integer in the current bitwidth */&#x000a;fun min:one Int { fun/min }&#x000a;&#x000a;/** maps each integer (except max) to the integer after it */&#x000a;fun next:Int-&gt;Int { fun/next }&#x000a;&#x000a;/** maps each integer (except min) to the integer before it */&#x000a;fun prev:Int-&gt;Int { ~next }&#x000a;&#x000a;/** given a set of integers, return the largest element */&#x000a;fun max [es: set Int]: lone Int { es - es.^prev }&#x000a;&#x000a;/** given a set of integers, return the smallest element */&#x000a;fun min [es: set Int]: lone Int { es - es.^next }&#x000a;&#x000a;/** given an integer, return all integers prior to it */&#x000a;fun prevs [e: Int]: set Int { e.^prev }&#x000a;&#x000a;/** given an integer, return all integers following it */&#x000a;fun nexts [e: Int]: set Int { e.^next }&#x000a;&#x000a;/** returns the larger of the two integers */&#x000a;fun larger [e1, e2: Int]: Int { let a=int[e1], b=int[e2] | (a&lt;b =&gt; b else a) }&#x000a;&#x000a;/** returns the smaller of the two integers */&#x000a;fun smaller [e1, e2: Int]: Int { let a=int[e1], b=int[e2] | (a&lt;b =&gt; a else b) }&#x000a;"/>
+
+</alloy>

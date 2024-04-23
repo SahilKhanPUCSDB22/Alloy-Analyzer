@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view nodetheme="Martha">
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="Int"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="seq/Int"/>
+</node>
+
+<node shape="Box" color="Blue">
+   <type name="people"/>
+</node>
+
+<node shape="House" color="Green">
+   <type name="last"/>
+</node>
+
+<node shape="Trapezoid" color="Yellow">
+   <type name="first"/>
+</node>
+
+</view>
+
+</alloy>

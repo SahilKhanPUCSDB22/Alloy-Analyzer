@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view nodetheme="Martha">
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="dec"/>
+   <type name="direction"/>
+   <type name="inc"/>
+   <type name="Int"/>
+   <type name="lanes"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="seq/Int"/>
+</node>
+
+<node shape="Circle" color="Blue">
+   <type name="people"/>
+</node>
+
+<node showlabel="no" color="Green">
+   <set name="this/first" type="people"/>
+</node>
+
+<node showlabel="no" color="Red">
+   <set name="this/last" type="people"/>
+</node>
+
+<edge layout="yes" attribute="no">
+   <relation name="n"> <type name="people"/> <type name="people"/> </relation>
+</edge>
+
+<edge visible="no">
+   <relation name="st"> <type name="people"/> <type name="Int"/> </relation>
+</edge>
+
+<edge visible="no" attribute="yes">
+   <relation name="d"> <type name="people"/> <type name="direction"/> </relation>
+   <relation name="l"> <type name="people"/> <type name="Int"/> </relation>
+   <relation name="seg"> <type name="people"/> <type name="Int"/> </relation>
+</edge>
+
+</view>
+
+</alloy>
